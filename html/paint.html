@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Playork</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <script src="../script/jquery-1.12.4.js"></script>
+    <script src="../script/paint.js"></script>
+    <link href="../css/paint.css" rel="stylesheet" type="text/css">
+    <link href="../css/Font-Lobster.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <script src="../script/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body style="background: #111;">
+    <div class="nav">
+    <img src="../playork.png" width="20%" style="min-width: 200px;">
+    <a class="a" href="../contact.html"><h2 style="float: right;padding-right: 3%;">Contact us</h2></a>
+    </div>
+    <div class="float-left-area">
+        <div class="inner-left">
+        <br>
+        <a class="a" href="calculator.html"><h1>Calculator</h1></a>
+        <br>
+        <a class="a" href="#"><h1>Paint</h1></a>
+        <br>
+        <a class="a" href="to-do.html"><h1>To-Do</h1></a>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="float-right-area" style="margin-top: -100px;">
+        <div class="inner-right">
+            <div id=colors class=font>
+                <p><input id='color' type="color" onchange='changeColor("value")' ontouchstart='changeColor("value")'/>
+                <button class="btn btn-primary" onclick='newColor()'>GO</button>(pick a color and press go)</p>
+              </div>
+            <div id="colors">
+                <div class="col-xs-1">
+                <button id='black' class="btn btn-block btn-primary" onclick='changeColor("black")' ontouchstart='changeColor("black")'></button>
+                </div>
+                <div class="col-xs-1">
+                <button id='red' class="btn btn-block btn-primary" onclick='changeColor("red")' ontouchstart='changeColor("red")'></button>
+                </div>
+                <div class="col-xs-1">
+                <button id='green' class="btn btn-block btn-primary" onclick='changeColor("green")' ontouchstart='changeColor("green")'></button>
+                </div>
+                <div class="col-xs-1">
+                <button id='blue' class="btn btn-block btn-primary" onclick='changeColor("blue")' ontouchstart='changeColor("blue")'></button>
+                </div>
+                <div class="col-xs-1">
+                <button id='orange' class="btn btn-block btn-primary" onclick='changeColor("orange")' ontouchstart='changeColor("orange")'></button>
+                </div>
+                <div class="col-xs-1">
+                <button id='pink' class="btn btn-block btn-primary" onclick='changeColor("pink")' ontouchstart='changeColor("pink")'></button>
+                </div>
+                <div class="col-xs-1">
+                <button id='white' class="btn btn-block btn-primary" onclick='changeColor("white")' ontouchstart='changeColor("white")'></button>
+                </div>
+                <div class="col-xs-1">
+                <button id='yellow' class="btn btn-block btn-primary" onclick='changeColor("yellow")' ontouchstart='changeColor("yellow")'></button>
+                </div>
+                <div class="col-xs-1">
+                <button id='brown' class="btn btn-block btn-primary" onclick='changeColor("brown")' ontouchstart='changeColor("brown")'></button>
+                </div>
+            </div>
+           <div id='colors'>
+            <canvas id='canvas' width="600" height="315"></canvas>
+            <span class="font" id='colorValue'>color:</span>
+            <h4 id=clear>Line width:</h4>
+            <div>
+                <div class="col-xs-4" style="margin-left:7%;">
+                <button class="btn btn-block btn-primary" id='sizeDown' onclick='changeSize("-")'>-</button>
+                </div>
+                <div class="col-xs-4">
+                <button class="btn btn-block btn-primary" id='sizeUp' onclick='changeSize("+")'>+</button>
+                </div>
+           </div>
+           <form>
+            <div id="clear" class="text-center">
+            <div id="maxl">
+                <div class="col-xs-3">
+                <label class="radio inline"> 
+                <input type="radio" name="painterWidth" onclick='changeWidth(1)' ontouchstart='changeWidth(1)'>very small
+                </label>
+                </div>
+                <div class="col-xs-3">
+                <label class="radio inline"> 
+                <input type="radio" name="painterWidth" onclick='changeWidth(3)' ontouchstart='changeWidth(3)'>small
+                </label>
+                </div>
+                <div class="col-xs-3">
+                <label class="radio inline"> 
+                <input type="radio" name="painterWidth" onclick='changeWidth(5)' ontouchstart='changeWidth(5)'            checked>real
+                </label>
+                </div>
+                <div class="col-xs-3">
+                <label class="radio inline"> 
+                <input type="radio" name="painterWidth" onclick='changeWidth(10)' ontouchstart='changeWidth(10)'>big
+                </label>
+                </div>
+                <div class="col-xs-3">
+                <label class="radio inline"> 
+                <input type="radio" name="painterWidth" onclick='changeWidth(20)' ontouchstart='changeWidth(20)'>very big
+                </label>
+                </div>
+                <div class="col-xs-3">
+                <label class="radio inline"> 
+                <input type="radio" name="painterWidth" onclick='changeWidth(40)' ontouchstart='changeWidth(40)'>extremely big
+                </label>
+                </div>
+            </div>
+            </div>
+           </form>
+           </div>
+           <div>
+            <button id=clear class="btn btn-block btn-primary" onclick='clearCanvas()'><i class="fa fa-trash"></i>clear</button>
+        </div>
+        </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Playork</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+</head>
+<body>
+    <div class="nav">
+    <img src="../playork.png" width="20%" style="min-width: 200px;">
+    <a class="a" href="../contact.html"><h2 style="float: right;padding-right: 3%;">Contact us</h2></a>
+    </div>
+    <div class="float-left-area">
+        <div class="inner-left">
+        <br>
+        <a class="a" href="#"><h1>Calculator</h1></a>
+        <br>
+        <a class="a" href="paint.html"><h1>Paint</h1></a>
+        <br>
+        <a class="a" href="to-do.html"><h1>To-Do</h1></a>
+        </div>
+        </div>
+        <div class="float-right-area">
+        <div class="inner-right">
+                <link rel="stylesheet" type="text/css" href="../css/calculator.css" />
+                <script src="../script/calculator.js"></script>
+                <link href="../css/Font-Lobster.css" rel="stylesheet" type="text/css">
+                <div class="box">
+                    <div class="display">
+                        <input type="text" readonly size="18" id="d">
+                    </div>
+                    <div class="keys">
+                        <p>
+                            <input type="button" class="button gray" value="mrc" onclick='c'><input type="button" class="button gray" value="m-" onclick='    c'><input type="button" class="button gray"
+                                                                                                                                                                        value="m+" onclick='c'><input type="button" class="button pink" value="/" onclick='    v("/")'>
+                        </p>
+                        <p>
+                            <input type="button" class="button black" value="7" onclick='v("7")'><input type="button" class="button black" value="8" onclick='    v("8")'><input type="button" class="button black" value="9" onclick='    v("9")'><input type="button" class="button pink" value="*" onclick='v("*")'>
+                        </p>
+                        <p>
+                            <input type="button" class="button black" value="4" onclick='v("4")'><input type="button" class="button black" value="5" onclick='    v("5")'><input type="button" class="button black" value="6" onclick='    v("6")'><input type="button" class="button pink" value="-" onclick='v("-")'>
+                        </p>
+                        <p>
+                            <input type="button" class="button black" value="1" onclick='v("1")'><input type="button" class="button black" value="2" onclick='    v("2")'><input type="button" class="button black" value="3" onclick='    v("3")'><input type="button" class="button pink" value="+" onclick='v("+")'>
+                        </p>
+                        <p>
+                            <input type="button" class="button black" value="0" onclick='v("0")'><input type="button" class="button black" value="." onclick='    v(".")'><input type="button" class="button black" value="C" onclick='    c("")'><input type="button" class="button orange" value="=" onclick='e()'>
+                        </p>
+                    </div>
+                </div>
+        </div>
+        </div>
+</body>
+</html>

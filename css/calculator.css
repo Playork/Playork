@@ -1,0 +1,90 @@
+.box {
+    background-color: #111;
+    width: 250px;
+    margin: auto;
+}
+.display {
+    background-color: #222;
+    width: 205px;
+    position: relative;
+    left: 15px;
+    top: 20px;
+    height: 40px;
+}
+
+.display input {
+    position: relative;
+    left: 2px;
+    top: 2px;
+    height: 35px;
+    color: black;
+    background-color: #eee;
+    font-size: 21px;
+    text-align: right;
+    width:205px;
+    font-family: Lobster, Monospace;
+}
+.keys {
+    position: relative;
+    top: 30px;
+    font-family: Lobster, Monospace;
+}
+
+.button {
+    color: black;
+    width: 40px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    margin-left: 17px;
+    cursor: pointer;
+    border-top: 2px solid transparent;
+    font-family: Lobster, Monospace;
+}
+
+    .button.gray {
+        background-color: #6f6f6f;
+        border-bottom: black 2px solid;
+        border-top: 2px #6f6f6f solid;
+    }
+
+    .button.pink {
+        background-color: #ff4561;
+        border-bottom: black 2px solid;
+    }
+
+    .button.black {
+        background-color: 303030;
+        border-bottom: black 2px solid;
+        border-top: 2px 303030 solid;
+    }
+
+    .button.orange {
+        background-color: FF9933;
+        border-bottom: black 2px solid;
+        border-top: 2px FF9933 solid;
+    }
+
+.gray:active {
+    border-top: black 2px solid;
+    border-bottom: 2px #6f6f6f solid;
+}
+
+.pink:active {
+    border-top: black 2px solid;
+    border-bottom: #ff4561 2px solid;
+}
+
+.black:active {
+    border-top: black 2px solid;
+    border-bottom: #303030 2px solid;
+}
+
+.orange:active {
+    border-top: black 2px solid;
+    border-bottom: FF9933 2px solid;
+}
+
+.keys p {
+    line-height: 10px;
+}

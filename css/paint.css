@@ -1,0 +1,91 @@
+#canvas
+{
+    border: 2px solid black;
+    cursor: pointer;
+    background-color:white;
+    margin:auto;
+    display: block;
+}
+
+#black 
+{
+    background: black;
+    font-family: Lobster, Monospace;
+}
+#pink 
+{
+    background: pink;
+    font-family: Lobster, Monospace;
+    color: red;
+}
+#red
+{
+    background: red;
+    font-family: Lobster, Monospace;
+}
+#green 
+{ 
+    background: green;
+    font-family: Lobster, Monospace;
+}
+#blue 
+{
+    background: blue;
+    font-family: Lobster, Monospace;
+    color: red;
+}
+#orange 
+{
+    background: orange;
+    font-family: Lobster, Monospace;
+    color: red;
+}
+#white 
+{
+    background: white;
+    font-family: Lobster, Monospace;
+    color: black;
+}
+#yellow 
+{
+    background: yellow;
+    font-family: Lobster, Monospace;
+    color: black;
+}
+#brown 
+{
+    background: brown;
+    font-family: Lobster, Monospace;
+    color: black;
+}
+#clear
+{
+   color: white;
+   font-family: Lobster, Monospace;
+}
+.clear {
+    font-family: Lobster, Monospace;
+}
+.radio{
+  color:brown;
+  font-size:15px;
+  position:relative;
+}
+.radio input[type="radio"]{
+   cursor: pointer; 
+  position:absolute;
+  width:100%;
+  height:100%;
+  z-index: 1;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+}
+#color
+{
+    margin: auto;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin-top: 0;
+}

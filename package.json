@@ -1,0 +1,18 @@
+{
+  "name": "playork",
+  "version": "1.0.0",
+  "description": "all in one experiance of some simple tool",
+  "scripts": {
+    "start": "electron index.js"
+  },
+  "author": "Ramnath",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "electron": "^2.0.9",
+    "packager": "0.0.4",
+    "yo-yo": "^1.4.1"
+  },
+  "devDependencies": {
+    "electron-packager": "^12.1.0"
+  }
+}
