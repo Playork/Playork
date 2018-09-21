@@ -4,7 +4,7 @@
 
 Playork is a Collection of Some Simple Tools and Games.
 
-Application is in beta the 'adding games','README.md modification' and 'contact page in app' are in work you will also see some bugs it will tka some time to release first version.
+Application is in beta the adding games in app is in work you will also see some bugs it will take some time to release first version.
 
 ## Install
 
