@@ -2,7 +2,7 @@ const electron = require('electron')
 const {app, BrowserWindow} = electron
 
 app.on('ready', () => {
-  let win = new BrowserWindow({ width: 1100, height: 700, icon:'Playork1.png', title: "Productivity Tools", resizable: false, frame: false})
+  let win = new BrowserWindow({ width: 1100, height: 680, icon:'Playork1.png', title: "Productivity Tools", resizable: false, frame: false})
   win.loadURL(`file://${__dirname}/index.html`)
   win.on('ready', () => { win = null })
   win.setMenu(null);
