@@ -4,11 +4,16 @@
 
 Playork is a Collection of Some Simple Tools and Games.
 
-Application is in beta the 'adding games','README.md modification' and 'contact page in app' are in work you will also see some bugs it will tka some time to release first version.
+Application is in beta the adding games in app is in work you will also see some bugs it will take some time to release first stable version.
 
 ## Install
 
-if you want to try it install nodejs and do this:
+if you want to try it install nodejs,git and clone this repository
+
+```bash
+ git clone https://github.com/Playork/Playork
+```
+point to source directory
 
 ```bash
  cd /path/to/source/Playork
