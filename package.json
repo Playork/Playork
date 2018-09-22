@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "playork",
   "version": "1.0.0",
   "description": "Collection of some simple Tools and Games",
@@ -16,5 +16,12 @@
   },
   "devDependencies": {
     "electron-packager": "^12.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/playork/playork"
+  },
+  "bugs": {
+    "url": "https://github.com/playork/playork/issues"
   }
 }
