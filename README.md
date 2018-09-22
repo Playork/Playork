@@ -1,10 +1,10 @@
 ## Description
 
-![logo.png](Playork.png)
+![logo.png](images/playork.png)
 
 Playork is a Collection of Some Simple Tools and Games.
 
-Application is in beta the adding games in app is in work you will also see some bugs it will take some time to release first stable version.
+Warning-----not tried in mac
 
 ## Install
 
