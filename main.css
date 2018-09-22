@@ -1,7 +1,9 @@
+
 body{
     padding:0;
     margin:0;
     background: #111;
+    overflow-y: hidden;
 }
 .nav{
     width: 100%;
@@ -14,7 +16,7 @@ body{
     width: 20%;
     background:#333;
     float: left;
-    min-height: 620px;
+    min-height: 2000px;
     min-width: 200px;
     }
 
@@ -34,9 +36,14 @@ body{
 
 .a {
     text-decoration: none;
-    color:rgb(107, 176, 221);
+    color:#3fe415;
     font-family: Lobster, Monospace; 
 }
 #clear{
     width:80%;
+}
+.b {
+    text-decoration: none;
+    color:rgb(107, 176, 221);
+    font-family: Lobster, Monospace; 
 }

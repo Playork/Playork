@@ -1,16 +1,18 @@
 {
   "name": "playork",
   "version": "1.0.0",
-  "description": "all in one experiance of some simple tool",
+  "description": "Collection of some simple Tools and Games",
+  "productName": "Playork",
+  "homepage": "http://playork.ml",
+  "copyright": "© 2018, Playork",
   "scripts": {
     "start": "electron index.js"
   },
-  "author": "Ramnath",
-  "license": "UNLICENSED",
+  "author": "Ramnath <bekalshenoy@gmail.com>",
+  "license": "MIT License (MIT)",
   "dependencies": {
     "electron": "^2.0.9",
-    "packager": "0.0.4",
-    "yo-yo": "^1.4.1"
+    "packager": "0.0.4"
   },
   "devDependencies": {
     "electron-packager": "^12.1.0"
