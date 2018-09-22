@@ -125,7 +125,7 @@ Game.Draw = function(context, snake) {
     }
     
     // Draw White Stage
-		context.fillStyle = "white";
+		context.fillStyle = "#111";
 		context.fillRect(0, 0, snake.stage.width, snake.stage.height);
 		
     // Snake Position
@@ -181,7 +181,7 @@ Game.Draw = function(context, snake) {
   
   // Draw Cell
   this.drawCell = function(x, y) {
-    context.fillStyle = 'rgb(170, 170, 170)';
+    context.fillStyle = '#bbb';
     context.beginPath();
     context.arc((x * snake.stage.conf.cw + 6), (y * snake.stage.conf.cw + 6), 4, 0, 2*Math.PI, false);    
     context.fill();
@@ -217,5 +217,9 @@ Game.Snake = function(elementId, conf) {
  * Window Load
  */
 window.onload = function() {
+  var btn = document.getElementById("start");
+  btn.addEventListener("click", startGame);
+};
+function startGame() {
   var snake = new Game.Snake('stage', {fps: 100, size: 4});
 };

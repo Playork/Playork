@@ -38,6 +38,7 @@ body{
     text-decoration: none;
     color:#3fe415;
     font-family: Lobster, Monospace; 
+    border-radius: 10px;
 }
 #clear{
     width:80%;

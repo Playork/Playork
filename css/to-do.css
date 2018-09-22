@@ -1,8 +1,9 @@
 
 #header {
-    width: 100%;
+    border-radius: 20px;
+    width: 80%;
     border: 0;
-    margin: 0;
+    margin-left:20%;
     color: #ffffff;
     background-color: #232323;
     text-transform: uppercase;
@@ -11,6 +12,7 @@
 }
 
 #title {
+    border-radius: 20px;
     font-family: Lobster, Monospace;
     color: #ffffff;
     background-color: #232323;
@@ -24,29 +26,36 @@
 }
 
 #title::-webkit-input-placeholder {
+    border-radius: 20px;
   color: #ffffff;
 }
 #title::-moz-placeholder {
+    border-radius: 20px;
   color: #ffffff;
 }
 #title:-ms-input-placeholder {
+    border-radius: 20px;
   color: #ffffff;
 }
 #title:-moz-placeholder {
+    border-radius: 20px;
   color: #ffffff;
 }
 
 #title:focus {
+    border-radius: 20px;
     outline: 0;
 }
 
 ul {
+    border-radius: 20px;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 li {
+    border-radius: 20px;
     color: #666;
     height: 40px;
     line-height: 40px;
@@ -54,14 +63,17 @@ li {
 }
 
 li::selection {
+    border-radius: 20px;
     background: none;
 }
 
 li:nth-child(odd) {
+    border-radius: 20px;
     background-color: #ffffff;
 }
 
 span {
+    border-radius: 20px;
     background-color: #e74c3c;
     color: #fff;
     height: 40px;
@@ -74,11 +86,13 @@ span {
 }
 
 li:hover span {
+    border-radius: 20px;
     width: 40px;
     opacity: 1;
 }
 
 #items {
+    border-radius: 20px;
     font-family: Lobster, Monospace;
     color: #232323;
     box-sizing: border-box;
@@ -92,22 +106,26 @@ li:hover span {
 }
 
 #items:focus {
+    border-radius: 20px;
     background: #ffffff;
     border: 3px solid #232323;
     outline: 0;
 }
 
 .fa-pencil {
+    border-radius: 20px;
     float: right;
     margin: 10px 20px 10px 10px;
     z-index: 1;
 }
 
 .fa-trash-o {
+    border-radius: 20px;
     line-height: 40px;
 }
 
 .done {
+    border-radius: 20px;
     color: gray;
     text-decoration: line-through;
 }
