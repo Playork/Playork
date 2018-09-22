@@ -1,9 +1,9 @@
-
 body{
     padding:0;
     margin:0;
     background: #111;
     overflow-y: hidden;
+    font: caption;
 }
 .nav{
     width: 100%;
@@ -37,7 +37,6 @@ body{
 .a {
     text-decoration: none;
     color:#3fe415;
-    font-family: Lobster, Monospace; 
     border-radius: 10px;
 }
 #clear{
@@ -45,6 +44,5 @@ body{
 }
 .b {
     text-decoration: none;
-    color:rgb(107, 176, 221);
-    font-family: Lobster, Monospace; 
+    color:rgb(107, 176, 221); 
 }

@@ -6,10 +6,15 @@
     <title>Playork</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <script src="../script/jquery-1.12.4.js"></script>
+    <link href="../css/to-do.css" rel="stylesheet" type="text/css">
+    <script src="../script/to-do.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
 </head>
 <body style="background:#111;">
     <div class="nav">
-        <img src="../images/playork.png" width="15%" style="min-width: 200px;">
+        <a href="../index.html"><img src="../images/playork.png" width="15%" style="min-width: 200px;"></a>
         <a class="b" href="../help.html"><h2 style="float: right;padding-right: 3%;">Help</h2></a>
         </div>
         <div class="float-left-area">
@@ -28,11 +33,6 @@
                 <script>
                         window.onerror = function (msg, url, line, col, error) { var lineText = line == 0 ? "" : "<br /><span>Line: " + (line) + "</span>"; var errorMessage = msg + lineText; window.parent.document.querySelector("#jsConsole .errorMessage").innerHTML = errorMessage; return false; }
                     </script>
-                    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
-                    <link href="../css/Font-Lobster.css" rel="stylesheet">
-                    <script src="../script/jquery-1.12.4.js"></script>
-                    <link href="../css/to-do.css" rel="stylesheet" type="text/css">
-                    <script src="../script/to-do.js"></script>
         <div id="header">
             <input id="title" type="text" placeholder="To-Do List">
             <i class="fa fa-pencil" aria-hidden="true"></i>

@@ -12,71 +12,60 @@
 {
     border-radius: 10px;
     background: black;
-    font-family: Lobster, Monospace;
 }
 #pink 
 {
     border-radius: 10px;
     background: pink;
-    font-family: Lobster, Monospace;
     color: red;
 }
 #red
 {
     border-radius: 10px;
     background: red;
-    font-family: Lobster, Monospace;
 }
 #green 
 { 
     border-radius: 10px;
     background: green;
-    font-family: Lobster, Monospace;
 }
 #blue 
 {
     border-radius: 10px;
     background: blue;
-    font-family: Lobster, Monospace;
     color: red;
 }
 #orange 
 {
     border-radius: 10px;
     background: orange;
-    font-family: Lobster, Monospace;
     color: red;
 }
 #white 
 {
     border-radius: 10px;
     background: white;
-    font-family: Lobster, Monospace;
     color: black;
 }
 #yellow 
 {
     border-radius: 10px;
     background: yellow;
-    font-family: Lobster, Monospace;
     color: black;
 }
 #brown 
 {
     border-radius: 10px;
     background: brown;
-    font-family: Lobster, Monospace;
     color: black;
 }
 #clear
 {
    border-radius: 20px;
    color: white;
-   font-family: Lobster, Monospace;
 }
 .clear {
     border-radius: 10px;
-    font-family: Lobster, Monospace;
 }
 .radio{
   color:brown;

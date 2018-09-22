@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "playork",
   "version": "1.0.0",
   "description": "Collection of some simple Tools and Games",
@@ -9,10 +9,9 @@
     "start": "electron index.js"
   },
   "author": "Ramnath <bekalshenoy@gmail.com>",
-  "license": "MIT License (MIT)",
+  "license": "MIT",
   "dependencies": {
-    "electron": "^2.0.9",
-    "packager": "0.0.4"
+    "electron": "^2.0.9"
   },
   "devDependencies": {
     "electron-packager": "^12.1.0"
