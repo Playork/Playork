@@ -6,14 +6,26 @@
   "homepage": "http://playork.ml",
   "copyright": "© 2018, Playork",
   "scripts": {
-    "start": "electron index.js"
+    "start": "electron index.js",
+    "dist": "build --win --linux --x64 --ia32"
   },
   "author": "Ramnath <bekalshenoy@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "electron": "^2.0.9"
+  "build": {
+    "appId": "ml.playork.playork",
+    "linux": {
+      "target": [
+        "deb",
+        "rpm"
+      ]
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "playork.png"
+    }
   },
   "devDependencies": {
+    "electron": "^2.0.9",
     "electron-packager": "^12.1.0"
   },
   "repository": {
