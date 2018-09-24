@@ -1,0 +1,6 @@
+name: playork
+version: "1.0.0"
+summary: playork,tools and games
+description: Collection of some tools and games
+grade: stable
+confinement: strict
