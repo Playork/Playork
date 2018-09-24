@@ -1,0 +1,10 @@
+
+  name: playork
+  version: '1.0.0'
+  summary: playork,tools and games snap
+  description: |
+    Collection of some simple tools and games
+
+  grade: stable
+  confinement: strict
+  
