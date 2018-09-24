@@ -8,3 +8,6 @@
   grade: stable
   confinement: strict
   
+parts:
+  playork:
+    plugin: nil
