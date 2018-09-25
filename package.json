@@ -7,7 +7,7 @@
   "copyright": "© 2018, Playork",
   "scripts": {
     "start": "electron index.js",
-    "dist": "build --win --linux --x64 --ia32"
+    "dist": "build --x64 --ia32"
   },
   "author": "Ramnath <bekalshenoy@gmail.com>",
   "license": "MIT",
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "electron": "^2.0.9",
-    "electron-packager": "^12.1.0"
+    "electron-builder": "^20.28.4"
   },
   "repository": {
     "type": "git",
