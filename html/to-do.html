@@ -6,17 +6,18 @@
     <title>Playork</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
     <script src="../script/jquery-1.12.4.js"></script>
     <link href="../css/to-do.css" rel="stylesheet" type="text/css">
     <script src="../script/to-do.js"></script>
-    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
 </head>
 <body style="background:#111;">
     <div class="nav">
+        <div class="fix">
         <a href="../index.html"><img src="../images/playork.png" width="15%" style="min-width: 200px;"></a>
-        <a class="b" href="../help.html"><h2 style="float: right;padding-right: 3%;">Help</h2></a>
+        <a class="b" href="../help.html"><h2>Help</h2></a>
         </div>
+    </div>
+        <div class="float">
         <div class="float-left-area">
             <div class="inner-left">
             <h1 class="b">Tools</h1>
@@ -35,10 +36,10 @@
                     </script>
         <div id="header">
             <input id="title" type="text" placeholder="To-Do List">
-            <i class="fa fa-pencil" aria-hidden="true"></i>
+            <img class="fa fa-pencil"src="../images/pencil.png" width=20px height=20px aria-hidden="true"/>
         </div>
         
-        <input id="items" type="text" placeholder="Add New Item" style="width: 80%;">
+        <input id="items" type="text" placeholder="Add New Item">
         
         <ul>
             
@@ -48,6 +49,7 @@
             
         </ul>
     </div>
-        </div>
+    </div>
+    </div>
 </body>
 </html>

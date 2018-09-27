@@ -21,7 +21,7 @@ $('#items').on('keypress', function(event){
     if(event.which === 13 && $(this).val() !== "") {
         // if ENTER pressed & input not blank
         var newToDo = $(this).val().replace(/</g, "&lt;").replace(/>/g, "&gt;"); // save input to var
-        $('ul').append('<li><span><i class="fa fa-trash-o"></i></span> ' + newToDo + '</li>'); // append html and to-do content to ul
+        $('ul').append('<li><span><img src="../images/trash.png" class="fa fa-trash-o" width="20px" height="20px"/></span> ' + newToDo + '</li>'); // append html and to-do content to ul
         $(this).val("").blur(); // clear input
     }
 });

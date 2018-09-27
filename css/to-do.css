@@ -1,9 +1,7 @@
 
 #header {
-    border-radius: 20px;
-    width: 80%;
+    width: 100%;
     border: 0;
-    margin-left:20%;
     color: #ffffff;
     background-color: #232323;
     text-transform: uppercase;
@@ -113,7 +111,6 @@ li:hover span {
 }
 
 .fa-pencil {
-    border-radius: 20px;
     float: right;
     margin: 10px 20px 10px 10px;
     z-index: 1;
@@ -121,7 +118,6 @@ li:hover span {
 
 .fa-trash-o {
     border-radius: 20px;
-    line-height: 40px;
 }
 
 .done {
