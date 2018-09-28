@@ -1,11 +1,12 @@
 #canvas
 {
-    border: 2px solid black;
     cursor: pointer;
     background-color:white;
     margin:auto;
     display: block;
     border-radius: 20px;
+    margin-top: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 #black 
@@ -89,4 +90,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50px 50px;
     text-align: center;
+}
+p, h4, label {
+    text-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
