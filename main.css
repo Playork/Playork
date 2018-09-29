@@ -3,11 +3,13 @@ body{
     margin:0;
     background: #111;
     font: caption;
+    min-width: 910px;
 }
 .nav{
     height: 60px;
     background: #222;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    min-width: 910px;
 }
 .float {
     display: grid;
@@ -17,16 +19,22 @@ body{
 .float-left-area  {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     background:#333;
-    height:105vh;
+    height:155vh;
+    min-width: 210px;
 }
 
 .float-right-area {
     color: #eee;
+    min-width: 700px;
 }
 
 .inner-left {
     margin-left: 3%;
     position: fixed;
+    min-width: 210px;
+}
+.inner-right {
+    min-width: 700px;
 }
 .a {
     text-decoration: none;
@@ -59,6 +67,7 @@ button:hover {
     display: flex;
     width:100%;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    min-width: 910px;
 }
 .fix :nth-child(2) {
     margin-left: auto;

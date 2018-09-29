@@ -2,6 +2,13 @@ const {Menu} = require('electron')
 const electron = require('electron')
 const {app, BrowserWindow} = electron
 
+require('electron-context-menu')({
+	prepend: (params, browserWindow) => [{
+    label: 'v1.1.0'
+  }],
+  showInspectElement: false
+});
+
 app.on('ready', () => {
   let win = new BrowserWindow({ width: 1100, height: 680, icon:'playork.png', title: "Playork", backgroundColor: '#111', show: false})
   win.loadURL(`file://${__dirname}/index.html`)
@@ -31,9 +38,6 @@ const template = [
       },
       {
         role: 'paste'
-      },
-      {
-        role: 'pasteandmatchstyle'
       },
       {
         role: 'delete'

@@ -7,8 +7,7 @@
 }
 .display {
     background-color: #222;
-    width: 205px;
-    position: relative;
+    width: 240px;
     left: 15px;
     top: 20px;
     height: 40px;
@@ -18,7 +17,6 @@
 
 .display input {
     border-radius: 20px;
-    position: relative;
     left: 2px;
     top: 2px;
     height: 35px;
@@ -26,13 +24,11 @@
     background-color: #eee;
     font-size: 21px;
     text-align: right;
-    width:205px;
+    width:240px;
 }
 .keys {
     border-radius: 20px;
-    position: relative;
     top: 30px;
-    
 }
 
 .button {

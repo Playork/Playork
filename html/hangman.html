@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Playork</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/hangman.css">
+</head>
+<body style="background: #111;">
+    <div class="nav">
+    <div class="fix">
+    <a href="#"><img src="../images/playork.png" width="15%" style="min-width: 200px;"></a>
+    <a class="b" href="../help.html"><h2>Help</h2></a>
+    </div>
+    </div>
+        <div class="float">
+        <div class="float-left-area">
+            <div class="inner-left">
+            <h1 class="b">Tools</h1>
+            <a class="a" href="calculator.html"><h2>Calculator</h2></a>
+            <a class="a" href="paint.html"><h2>Paint</h2></a>
+            <a class="a" href="to-do.html"><h2>To-Do</h2></a>
+            <br>
+            <h1 class="b">Games</h1>
+            <a class="a" href="snake.html"><h2>Snake Game</h2></a>
+            <a style="color:green;" class="a" href="#"><h2>HangMan</h2></a>
+        </div>
+        </div>
+        <div class="float-right-area">
+        <div class="inner-right" style="display:grid;grid-template-rows: 1fr 1fr;">
+          <div class="modal fade" id="congratulatory_message" role="dialog" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">CONGRATULATIONS!</h4>
+                </div>
+                <div class="modal-body">
+                  <h5>Congratulations, you've won the game!!</h5>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn reset" data-dismiss="modal"> Close and Reset </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="gameover_message" role="dialog" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">You lost the game!</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-10 col-md-offset-1">
+                        <p class="lead"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn reset" data-dismiss="modal"> Close and Reset </button>
+                </div>
+              </div>
+            </div>
+          </div>
+              <div class="row">
+                <div id="alphabet-keypad" class="col-sm-4">
+                  <div class="letter-button">A</div>
+                  <div class="letter-button">B</div>
+                  <div class="letter-button">C</div>
+                  <div class="letter-button">D</div>
+                  <div class="letter-button">E</div>
+                  <div class="letter-button">F</div>
+                  <div class="letter-button">G</div>
+                  <div class="letter-button">H</div>
+                  <div class="letter-button">I</div>
+                  <div class="letter-button">J</div>
+                  <div class="letter-button">K</div>
+                  <div class="letter-button">L</div>
+                  <div class="letter-button">M</div>
+                  <div class="letter-button">N</div>
+                  <div class="letter-button">O</div>
+                  <div class="letter-button">P</div>
+                  <div class="letter-button">Q</div>
+                  <div class="letter-button">R</div>
+                  <div class="letter-button">S</div>
+                  <div class="letter-button">T</div>
+                  <div class="letter-button">U</div>
+                  <div class="letter-button">V</div>
+                  <div class="letter-button">W</div>
+                  <div class="letter-button">X</div>
+                  <div class="letter-button">Y</div>
+                  <div class="letter-button">Z</div>
+                </div>
+                <div id="hangman-graphic" class="col-sm-3">
+                  <img src="../images/hangman-graphic/background.png">
+                  <img class="hangman-frames" id="hangman-frame0"
+                       src="../images/hangman-graphic/hangman0.jpg">
+                  <img class="hangman-frames" id="hangman-frame1"
+                       src="../images/hangman-graphic/hangman1.jpg">
+                  <img class="hangman-frames" id="hangman-frame2"
+                       src="../images/hangman-graphic/hangman2.jpg">
+                  <img class="hangman-frames" id="hangman-frame3"
+                       src="../images/hangman-graphic/hangman3.jpg">
+                  <img class="hangman-frames" id="hangman-frame4"
+                       src="../images/hangman-graphic/hangman4.jpg">
+                  <img class="hangman-frames" id="hangman-frame5"
+                       src="../images/hangman-graphic/hangman5.jpg">
+                  <img class="hangman-frames" id="hangman-frame6"
+                       src="../images/hangman-graphic/hangman6.jpg">
+                  <img class="hangman-frames" id="hangman-frame7"
+                       src="../images/hangman-graphic/hangman7.jpg">
+                  <div class="hangman-controls">
+                    <button class="btn btn-success reset">
+                    Reset
+                    </button>
+                  </div>
+                </div>
+                <div id="letter-graveyard">
+                </div>
+              </div>
+              <div class="row text-center">
+                <div id="word-to-guess" ></div>
+              </div>
+              <script src="../script/jquery-1.12.4.js"></script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+          <script src="../script/hangman.js"></script>
+              <script src="../script/hangman1.js"></script>
+        </div>
+        </div>
+        </div>
+</body>
+</html>
