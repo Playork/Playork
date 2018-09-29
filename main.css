@@ -42,6 +42,9 @@ body{
     border-radius: 10px;
     text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
+.a:hover {
+    color:green;
+}
 .b {
     text-decoration: none;
     color:rgb(107, 176, 221); 
@@ -71,4 +74,11 @@ button:hover {
 }
 .fix :nth-child(2) {
     margin-left: auto;
+}
+.select {
+    border-left: 5px solid rgb(107, 176, 221);
+    background: #555;
+}
+.selecting:hover {
+    background: #555;
 }
