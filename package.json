@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "playork",
   "version": "1.1.0",
   "description": "Collection of some simple Tools and Games",
@@ -26,7 +26,9 @@
   },
   "devDependencies": {
     "electron": "^2.0.9",
-    "electron-builder": "^20.28.4",
+    "electron-builder": "^20.28.4"
+  },
+  "dependencies": {
     "electron-context-menu": "^0.10.0",
     "electron-dl": "^1.12.0",
     "electron-is-dev": "^1.0.1",
