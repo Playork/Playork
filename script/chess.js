@@ -4,7 +4,7 @@ window.onload = function(){
     
     var tsw = (w > h) ? h : w;
     
-    var sw = (tsw - 16)/9;
+    var sw = (tsw - 16)/10;
     
     var container = document.getElementById("container");
     for(var n = 0; n < 64; n++){

@@ -4,6 +4,7 @@ body{
     background: #111;
     font: caption;
     min-width: 910px;
+    overflow-x:hidden;
 }
 .nav{
     height: 60px;
