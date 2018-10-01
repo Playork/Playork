@@ -1,6 +1,6 @@
 
 #header {
-    width: 100%;
+    width: 80%;
     border: 0;
     color: #ffffff;
     background-color: #232323;
@@ -97,7 +97,7 @@ li:hover span {
     font-family: Lobster, Monospace;
     color: #232323;
     box-sizing: border-box;
-    width: 100%;
+    width: 80%;
     font-size: 18px;
     background-color: #f7f7f7;
     border: 3px solid rgba(0,0,0,0);

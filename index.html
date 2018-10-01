@@ -16,6 +16,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     <title>Playork</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script>window.$ = window.jQuery = require('script/jquery.min.js');</script>
 </head>
 <body>
     <div class="nav">
@@ -28,24 +29,29 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         <div class="float-left-area">
             <div class="inner-left">
             <h1 class="b">Tools</h1>
-            <div class="selecting"><a class="a" href="html/calculator.html"><h2>Calculator</h2></a></div>
-            <div class="selecting"><a class="a" href="html/paint.html"><h2>Paint</h2></a></div>
-            <div class="selecting"><a class="a" href="html/to-do.html"><h2>To-Do</h2></a></div>
+            <div class="selecting c"><a target="iframe" class="a" href="html/calculator.html"><h2>Calculator</h2></a></div>
+            <div class="selecting c"><a target="iframe" class="a" href="html/paint.html"><h2>Paint</h2></a></div>
+            <div class="selecting c"><a target="iframe" class="a" href="html/to-do.html"><h2>To-Do</h2></a></div>
             <br>
             <h1 class="b">Games</h1>
-            <div class="selecting"><a class="a" href="html/snake.html"><h2>Snake Game</h2></a></div>
-            <div class="selecting"><a class="a" href="html/hangman.html"><h2>HangMan</h2></a></div>
-            <div class="selecting"><a class="a" href="html/chess.html"><h2>Chess</h2></a></div>
+            <div class="selecting c"><a target="iframe" class="a" href="html/snake.html"><h2>Snake Game</h2></a></div>
+            <div class="selecting c"><a target="iframe" class="a" href="html/hangman.html"><h2>HangMan</h2></a></div>
+            <div class="selecting c"><a target="iframe" class="a" href="html/chess.html"><h2>Chess</h2></a></div>
         </div>
         </div>
         <div class="float-right-area">
-        <div class="inner-right" style="display:grid;grid-template-rows: 1fr 1fr;">
-                <h1></h1>
-                <h1 style="font-size: 80px;text-align: center;">
-                        Welcome
-                </h1>  
+        <div class="inner-right">
+             <iframe name="iframe" src="welcome.html" width=100% height="800px"  scrolling="no"  frameborder="0" style="position: fixed;"></iframe>
         </div>
         </div>
         </div>
+	<script>window.$ = window.jQuery = require('jquery');</script>
+	<script>
+	        $('.selecting').click(function() {
+                $('.c').removeClass('select');
+                $('.c').addClass('selecting');
+                $(this).toggleClass('select');
+	        });
+	</script>
 </body>
 </html>

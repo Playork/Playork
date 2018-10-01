@@ -2,7 +2,7 @@
 {
     cursor: pointer;
     background-color:white;
-    margin:auto;
+    margin-left:18%;
     display: block;
     border-radius: 20px;
     margin-top: 5px;
@@ -75,19 +75,19 @@
     margin-top: 0;
 }
 #clear {
-    width:100%;
+    width:80%;
 }
 .colors {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 9% 9% 9% 9% 9% 9% 9% 9% 8%;
 }
 .size {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 44% 45%;
 }
 #maxl {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 27% 26% 27%;
     grid-template-rows: 50px 50px;
     text-align: center;
 }

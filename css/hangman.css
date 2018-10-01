@@ -3,7 +3,7 @@ button .pull-right{
 }
 .hanghead{
     display:block;
-    width: 80%;
+    width: 64%;
     margin: 1em auto;
 }
 #alphabet-keypad, #hangman-graphic, #letter-graveyard {
@@ -12,10 +12,10 @@ button .pull-right{
   float: none;
 }
 .row {
-  width: 100%;
+  width: 80%;
 }
 #alphabet-keypad {
-  margin-left: 4%;
+  margin-left: 3%;
   text-align: center;
 }
 .letter-button, .letter-disabled {
@@ -46,11 +46,11 @@ button .pull-right{
   cursor: default;
 }
 #hangman-graphic {
-  max-width: 50%;
+  max-width: 40%;
 }
 #hangman-graphic img {
   margin-left: 1em;
-  max-width: 100%;
+  max-width: 80%;
 }
 .hangman-frames {
   opacity: 0;
@@ -72,12 +72,9 @@ button .pull-right{
   text-align: center;
 }
 #letter-graveyard {
-  max-width: 50%;
+  max-width: 40%;
   padding: 3em;
   text-align: center;
-}
-#letter-graveyard img {
-  max-width: 100%;
 }
 .character-block {
   display: inline-block;

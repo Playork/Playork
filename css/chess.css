@@ -1,9 +1,8 @@
 .square {
-    margin-top: 55px;
+    margin-top:0;
     background:#afa;
     border:1px solid #fff;
     text-align:center;
-    margin-left:0;
     position: absolute;
     cursor: pointer;
     color:black;

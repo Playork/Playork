@@ -4,7 +4,7 @@ const {app, BrowserWindow} = electron
 
 require('electron-context-menu')({
 	prepend: (params, browserWindow) => [{
-    label: 'v1.1.0'
+    label: 'v1.2.0'
   }],
   showInspectElement: false
 });

@@ -36,6 +36,7 @@ body{
 }
 .inner-right {
     min-width: 700px;
+    position:fixed;
 }
 .a {
     text-decoration: none;
@@ -77,11 +78,11 @@ button:hover {
     margin-left: auto;
 }
 .select {
-    border-left: 5px solid rgb(107, 176, 221);
     background: #555;
     width:80%;
 }
 .selecting:hover {
     background: #555;
+    border-radius: 20px;
     width:80%;
 }

@@ -1,6 +1,6 @@
 {
   "name": "playork",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Collection of some simple Tools and Games",
   "productName": "Playork",
   "homepage": "http://playork.ml",
@@ -32,6 +32,7 @@
     "electron-context-menu": "^0.10.0",
     "electron-dl": "^1.12.0",
     "electron-is-dev": "^1.0.1",
+    "jquery": "^3.3.1",
     "object": "^0.1.1"
   },
   "repository": {
