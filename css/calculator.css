@@ -1,99 +1,37 @@
-.box {
-    border-radius: 20px;
-    background-color: #111;
-    width: 250px;
-    margin-left: 30%;
-    margin-top: 10px;
+body {
+   margin: 0; 
+   background-color: #111; 
+   text-align: center;
 }
-.display {
-    background-color: #222;
-    width: 240px;
-    left: 15px;
-    top: 20px;
-    height: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+p {
+   font-size: 0px;
 }
-
-.display input {
-    border-radius: 20px;
-    left: 2px;
-    top: 2px;
-    height: 35px;
-    color: black;
-    background-color: #eee;
-    font-size: 21px;
-    text-align: right;
-    width:240px;
+td {
+    border-radius: 60px;
+    width: 19vw; 
+    height: 12.2vh;  
+    text-align: center; 
+    font-size: 25px; 
+    font-weight: bold; 
+    color: black; 
+    background-color: #3fe415;
 }
-.keys {
-    border-radius: 20px;
-    top: 30px;
+td:hover {
+   background-color: green;
 }
-
-.button {
-    border-radius: 20px;
-    color: black;
-    width: 40px;
-    height: 30px;
-    border: none;
-    border-radius: 8px;
-    margin-left: 17px;
-    cursor: pointer;
-    border-top: 2px solid transparent;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+input {
+   border-radius: 60px;
+   width: 100%; 
+   height: 100%; 
+   border: none; 
+   font-size: 25px; 
+   font-weight: bold; 
+   background-color: #111;
+   color:white;
 }
-.button:hover {
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+#shiftBtn {
+   background-color: yellow;
 }
-    .button.gray {
-        border-radius: 20px;
-        background-color: #6f6f6f;
-        border-bottom: black 2px solid;
-        border-top: 2px #6f6f6f solid;
-    }
-
-    .button.pink {
-        border-radius: 20px;
-        background-color: #ff4561;
-        border-bottom: black 2px solid;
-    }
-
-    .button.black {
-        border-radius: 20px;
-        background-color: 303030;
-        border-bottom: black 2px solid;
-        border-top: 2px 303030 solid;
-    }
-
-    .button.orange {
-        border-radius: 20px;
-        background-color: FF9933;
-        border-bottom: black 2px solid;
-        border-top: 2px FF9933 solid;
-    }
-
-.gray:active {
-    border-top: black 2px solid;
-    border-bottom: 2px #6f6f6f solid;
-}
-
-.pink:active {
-    border-top: black 2px solid;
-    border-bottom: #ff4561 2px solid;
-}
-
-.black:active {
-    border-top: black 2px solid;
-    border-bottom: #303030 2px solid;
-}
-
-.orange:active {
-    border-top: black 2px solid;
-    border-bottom: FF9933 2px solid;
-}
-
-.keys p {
-    border-radius: 20px;
-    line-height: 10px;
+table {
+   width:80%;
 }

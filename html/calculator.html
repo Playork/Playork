@@ -5,33 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Playork</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
     <link rel="stylesheet" type="text/css" href="../css/calculator.css" />
     <script src="../script/calculator.js"></script>
 </head>
 <body>
-                <div class="box">
-                    <div class="display">
-                        <input type="text" readonly size="18" id="d">
-                    </div>
-                    <div class="keys">
-                        <p>
-                            <input type="button" class="button gray" value="mrc" onclick='c'><input type="button" class="button gray" value="m-" onclick='    c'><input type="button" class="button gray"
-                                                                                                                                                                        value="m+" onclick='c'><input type="button" class="button pink" value="/" onclick='    v("/")'>
-                        </p>
-                        <p>
-                            <input type="button" class="button black" value="7" onclick='v("7")'><input type="button" class="button black" value="8" onclick='    v("8")'><input type="button" class="button black" value="9" onclick='    v("9")'><input type="button" class="button pink" value="*" onclick='v("*")'>
-                        </p>
-                        <p>
-                            <input type="button" class="button black" value="4" onclick='v("4")'><input type="button" class="button black" value="5" onclick='    v("5")'><input type="button" class="button black" value="6" onclick='    v("6")'><input type="button" class="button pink" value="-" onclick='v("-")'>
-                        </p>
-                        <p>
-                            <input type="button" class="button black" value="1" onclick='v("1")'><input type="button" class="button black" value="2" onclick='    v("2")'><input type="button" class="button black" value="3" onclick='    v("3")'><input type="button" class="button pink" value="+" onclick='v("+")'>
-                        </p>
-                        <p>
-                            <input type="button" class="button black" value="0" onclick='v("0")'><input type="button" class="button black" value="." onclick='    v(".")'><input type="button" class="button black" value="C" onclick='    c("")'><input type="button" class="button orange" value="=" onclick='e()'>
-                        </p>
-                    </div>
-                </div>
+<p id=myPara></p>
+<p id=myAns>0</p>
+<table>
+    <tr>
+    <td colspan=5><input id=result readonly></td>
+    </tr>
+        
+    <tr>
+    <td onclick="shiftFn(1)" id=shiftBtn>Shift</td>
+    <td onclick="trigo('sin')">sin</td>
+    <td onclick="trigo('cos')">cos</td>
+    <td onclick="trigo('tan')">tan</td>
+    <td onclick="input('!')">!</td>
+    </tr>
+    
+    <tr>
+    <td onclick="input('^(')">^</td>
+    <td onclick="sqrt()">sqrt</td>
+    <td onclick="leftParen()">(</td>
+    <td onclick="input(')')">)</td>
+    <td onclick="log(1)">log</td>
+    </tr>
+    
+    <tr>
+    <td onclick="input('7')">7</td>
+    <td onclick="input('8')">8</td>
+    <td onclick="input('9')">9</td>
+    <td onclick="del()">DEL</td>
+    <td onclick="ac()">AC</td>
+    </tr>
+    
+    <tr>
+    <td onclick="input('4')">4</td>
+    <td onclick="input('5')">5</td>
+    <td onclick="input('6')">6</td>
+    <td onclick="multOrDiv('mult')">&#x00D7;</td>
+    <td onclick="multOrDiv('div')">&#x00F7;</td>
+    </tr>
+    
+    <tr>
+    <td onclick="input('1')">1</td>
+    <td onclick="input('2')">2</td>
+    <td onclick="input('3')">3</td>
+    <td onclick="input('+')">+</td>
+    <td onclick="input('-')">-</td>
+    </tr>
+    
+    <tr>
+    <td onclick="input('0')">0</td>
+    <td onclick="input('.')">.</td>
+    <td onclick="piOrE('pi')">&#x03C0;</td>
+    <td onclick="ans()">Ans</td>
+    <td onclick="equal()">=</td>
+    </tr>
+</table>
 </body>
 </html>

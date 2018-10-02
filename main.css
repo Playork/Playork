@@ -36,7 +36,6 @@ body{
 }
 .inner-right {
     min-width: 700px;
-    position:fixed;
 }
 .a {
     text-decoration: none;
@@ -85,4 +84,7 @@ button:hover {
     background: #555;
     border-radius: 20px;
     width:80%;
+}
+iframe {
+    position: fixed;
 }
