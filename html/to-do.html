@@ -1,32 +1,59 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Playork</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
-    <script src="../script/jquery.min.js"></script>
-    <link href="../css/to-do.css" rel="stylesheet" type="text/css">
-    <script src="../script/to-do.js"></script>
-</head>
-<body>
-                <script>
-                        window.onerror = function (msg, url, line, col, error) { var lineText = line == 0 ? "" : "<br /><span>Line: " + (line) + "</span>"; var errorMessage = msg + lineText; window.parent.document.querySelector("#jsConsole .errorMessage").innerHTML = errorMessage; return false; }
-                    </script>
-        <div id="header">
-            <input id="title" type="text" placeholder="To-Do List">
-            <img class="fa fa-pencil"src="../images/pencil.png" width=20px height=20px aria-hidden="true"/>
+    <head>
+        <title>AngelPrime to-do List</title>
+
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/jquery.ui.min.css" />
+        <link rel="stylesheet" href="../css/to-do.css" />
+        <link rel="stylesheet" href="../main.css" />
+    </head>
+
+    <body class="well">
+        <div id="container">
+	    
+   	   <div class="task-list">
+                <h3 style="color:white;">Add a task</h3>
+                <form id="todo-form">
+                    <input type="text" placeholder="Title" />
+                    <textarea placeholder="Description"></textarea>
+                    <input type="text" id="datepicker" placeholder="Due Date (dd/mm/yyyy)" />
+                    <input class="button" type="button" value="Add Task" onclick="todo.add();" />
+                </form>
+
+                <input class="button" type="button" value="Clear Data" onclick="todo.clear();" />
+
+                <div id="delete-div">
+                    Drag Here to Delete
+                </div>
+            </div>
+
+            <div class="task-list task-container" id="pending">
+                <h3 style="color:white;">Pending</h3>
+            </div>
+
+            <div class="task-list task-container" id="inProgress">
+                <h3 style="color:white;">In Progress</h3>
+            </div>
+
+            <div class="task-list task-container" id="completed">
+                <h3 style="color:white;">Completed</h3>
+            </div>
+
+            <div style="clear:both;"></div>
+	        <script type="text/javascript" src="../script/jquery.min.js"></script>
+            <script type="text/javascript" src="../script/bootstrap.min.js"></script>
+            <script type="text/javascript" src="../script/jquery.ui.min.js"></script>
+            <script type="text/javascript" src="../script/to-do.js"></script>
+
+            <script type="text/javascript">
+                $( "#datepicker" ).datepicker();
+                $( "#datepicker" ).datepicker("option", "dateFormat", "dd/mm/yy");
+
+                $(".task-container").droppable();
+                $(".todo-task").draggable({ revert: "valid", revertDuration:200 });
+                todo.init();
+            </script>
+
         </div>
-        
-        <input id="items" type="text" placeholder="Add New Item">
-        
-        <ul>
-            
-            
-            
-            
-            
-        </ul>
-</body>
+    </body>
 </html>

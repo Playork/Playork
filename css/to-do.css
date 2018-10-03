@@ -1,130 +1,90 @@
+.nano .pane   { background: #888; }
+.nano .slider { background: #111; }
 
-#header {
-    width: 80%;
+body {
+    background-color: #111!important;
+    border: 0 !important;
+}
+
+#container{
+    margin: 0;
+    width: 1060px;
+    min-height: 100%;
+    background-color: transparent;
     border: 0;
-    color: #ffffff;
-    background-color: #232323;
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 400;
+}
+
+.task-list{
+    width: 250px;
+    float: left;
+    margin: 0 5px;
+    background-color: #444;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    min-height: 240px;
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+
+.task-list input, .task-list textarea{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    width: 240px;
+    margin: 1px 5px;
+}
+
+.task-list input{
+    height: 30px;
+}
+
+.todo-task{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 5px;
+    background-color: #fff;
+    width: 230px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.task-list input[type="button"]{
+    width: 100px;
+    margin: 5px;
+
+}
+
+.todo-task > .task-header{
+    font-weight: bold;
+}
+
+.todo-task > .task-date{
+    font-size: small;
+    font-style: italic;
+}
+
+.todo-task > .task-description{
+    font-size: smaller;
+}
+
+h3{
+    text-align: center;
+}
+
+#delete-div{
+    display: none;
+    background-color: #fff;
+    border: 3px dotted #000;
+    margin: 10px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+}
+.button {
+    color: white;
+    background: rgb(14, 105, 224);
+    font-size: 15px;
+    padding:8px 8px;
+    border-width: 0;
+    border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
-
-#title {
-    border-radius: 20px;
-    font-family: Lobster, Monospace;
-    color: #ffffff;
-    background-color: #232323;
-    margin: 0;
-    border: 0;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 400;
-    width: 64%;
-    text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-#title::-webkit-input-placeholder {
-    border-radius: 20px;
-  color: #ffffff;
-}
-#title::-moz-placeholder {
-    border-radius: 20px;
-  color: #ffffff;
-}
-#title:-ms-input-placeholder {
-    border-radius: 20px;
-  color: #ffffff;
-}
-#title:-moz-placeholder {
-    border-radius: 20px;
-  color: #ffffff;
-}
-
-#title:focus {
-    border-radius: 20px;
-    outline: 0;
-}
-
-ul {
-    border-radius: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    border-radius: 20px;
-    color: #666;
-    height: 40px;
-    line-height: 40px;
-    overflow: hidden;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-li::selection {
-    border-radius: 20px;
-    background: none;
-}
-
-li:nth-child(odd) {
-    border-radius: 20px;
-    background-color: #ffffff;
-}
-
-span {
-    border-radius: 20px;
-    background-color: #e74c3c;
-    color: #fff;
-    height: 40px;
-    width: 0;
-    opacity: 0;
-    display: inline-block;
-    margin-right: 20px;
-    text-align: center;
-    transition: all 200ms linear;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-li:hover span {
-    border-radius: 20px;
-    width: 40px;
-    opacity: 1;
-}
-
-#items {
-    border-radius: 20px;
-    font-family: Lobster, Monospace;
-    color: #232323;
-    box-sizing: border-box;
-    width: 80%;
-    font-size: 18px;
-    background-color: #f7f7f7;
-    border: 3px solid rgba(0,0,0,0);
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    padding: 13px 13px 13px 20px;
-    height: 40px;
-}
-
-#items:focus {
-    border-radius: 20px;
-    background: #ffffff;
-    border: 3px solid #232323;
-    outline: 0;
-}
-
-.fa-pencil {
-    float: right;
-    margin: 10px 20px 10px 10px;
-    z-index: 1;
-}
-
-.fa-trash-o {
-    border-radius: 20px;
-}
-
-.done {
-    border-radius: 20px;
-    color: gray;
-    text-decoration: line-through;
+.button:hover {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
