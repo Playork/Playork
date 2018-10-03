@@ -1,15 +1,3 @@
-/*
- * @author Shaumik "Dada" Daityari
- * @copyright December 2013
- */
-
-/* Some info
-Using newer versions of jQuery and jQuery UI in place of the links given in problem statement
-All data is stored in local storage
-User data is extracted from local storage and saved in variable todo.data
-Otherwise, comments are provided at appropriate places
-*/
-
 var todo = todo || {},
     data = JSON.parse(localStorage.getItem("todoData"));
 
