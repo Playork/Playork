@@ -8,11 +8,9 @@
 
 Playork is a Collection of Some Simple Tools and Games.
 
-Warning-----not tried in mac
-
 ## Install
 
-if you want to try it install nodejs,git and clone this repository
+if you want to try it install [nodejs](https://nodejs.org), [git](https://git-scm.com/) and clone this repository
 
 ```bash
  git clone https://github.com/Playork/Playork
