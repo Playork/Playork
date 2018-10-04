@@ -98,7 +98,7 @@ button .pull-right{
   vertical-align: top;
   font-size: 2em;
   padding: 0.3em 0.25em;
-  border: 1px solid rgb(0,0,0);
+  border: 1px solid #3fe415;
   border-radius: 100% 100% 0 0 ;
 }
 .modal-content {
