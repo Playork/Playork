@@ -8,6 +8,7 @@
 
 Playork is a Collection of Some Simple Tools and Games.
 Snap package is available at [Here](https://snapcraft.io/playork).
+If you like my App , please consider buying me a coffee at [HERE!](http://buymeacoff.ee/playork) Thank you for your support!.
 
 ## Install
 
