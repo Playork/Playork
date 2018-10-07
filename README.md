@@ -4,7 +4,7 @@
 
 ![logo.png](Playork.png)
 
-![Screenshot](https://user-images.githubusercontent.com/38488260/46244561-3c904f00-c3fe-11e8-8383-32ea3111af4f.png)
+![Screenshot](https://user-images.githubusercontent.com/38488260/46581777-c625c980-ca5b-11e8-8843-0b0af65d619e.png)
 
 Playork is a Collection of Some Simple Tools and Games.
 Snap package is available at [Here](https://snapcraft.io/playork).
