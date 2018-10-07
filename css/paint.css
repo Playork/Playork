@@ -58,13 +58,20 @@
 .radio{
   color:rgb(107, 176, 221);
   font-size:15px;
-  position:relative;
   cursor: pointer; 
 }
 .radio input[type="radio"]{
-  position:absolute;
-  opacity: 0;
-  filter: alpha(opacity=0);
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #aaa;
+    background: #aaa;
+    border-radius: 50%;
+}
+.radio input[type="radio"]:checked {
+    background-color: rgb(107, 176, 221);
 }
 #color
 {
@@ -84,11 +91,11 @@
 .size {
     display: grid;
     grid-template-columns: 44% 45%;
+    margin-bottom:5px;
 }
 #maxl {
     display: grid;
-    grid-template-columns: 27% 26% 27%;
-    grid-template-rows: 50px 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
 }
 p, h4, label {

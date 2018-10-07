@@ -37,12 +37,6 @@
            <div id='colors'>
             <canvas id='canvas' width="600" height="315"></canvas>
             <h4>Line width:</h4>
-            <div class="size">
-                <button id="clear" id='sizeDown' onclick='changeSize("-")'>-</button>
-                
-                <button id="clear" id='sizeUp' onclick='changeSize("+")'>+</button>
-                
-           </div>
            <form>
             <div id="maxl">
                 <label class="radio inline"> 
@@ -72,6 +66,10 @@
             </div>
             </div>
            </form>
+           <div class="size">
+            <button id="clear" id='sizeDown' onclick='changeSize("-")'>-</button>
+            <button id="clear" id='sizeUp' onclick='changeSize("+")'>+</button>
+            </div>
            </div>
            <div>
             <button id="clear" onclick='clearCanvas()'><img src="../images/trash.png" width="15px" height="15px"/>clear</button>

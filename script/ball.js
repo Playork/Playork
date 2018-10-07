@@ -35,7 +35,7 @@ function handleMouseClick(evt) {
 	}
 }
 
-window.onload = function() {
+function startGame() {
 	canvas = document.getElementById('gameCanvas');
 	canvasContext = canvas.getContext('2d');
 
@@ -95,7 +95,7 @@ function moveEverything() {
 					-(paddle1Y+PADDLE_HEIGHT/2);
 			ballSpeedY = deltaY * 0.35;
 		} else {
-			player2Score++; // must be BEFORE ballReset()
+			player2Score++;
 			ballReset();
 		}
 	}
@@ -108,7 +108,7 @@ function moveEverything() {
 					-(paddle2Y+PADDLE_HEIGHT/2);
 			ballSpeedY = deltaY * 0.35;
 		} else {
-			player1Score++; // must be BEFORE ballReset()
+			player1Score++;
 			ballReset();	
 		}
 	}
@@ -127,8 +127,7 @@ function drawNet() {
 }
 
 function drawEverything() {
-	// next line blanks out the screen with black
-	colorRect(0,0,canvas.width,canvas.height,'black');
+	colorRect(0,0,canvas.width,canvas.height,'#444');
 
 	if(showingWinScreen) {
 		canvasContext.fillStyle = 'white';
@@ -145,14 +144,11 @@ function drawEverything() {
 
 	drawNet();
 
-	// this is left player paddle
 	colorRect(0,paddle1Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'white');
 
-	// this is right computer paddle
 	colorRect(canvas.width-PADDLE_THICKNESS,paddle2Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'white');
 
-	// next line draws the ball
-	colorCircle(ballX, ballY, 10, 'white');
+	colorCircle(ballX, ballY, 10, '#3fe415');
 
 	canvasContext.fillText(player1Score, 100, 100);
 	canvasContext.fillText(player2Score, canvas.width-100, 100);
@@ -169,3 +165,9 @@ function colorRect(leftX,topY, width,height, drawColor) {
 	canvasContext.fillStyle = drawColor;
 	canvasContext.fillRect(leftX,topY, width,height);
 }
+window.onload = function() {
+    document.getElementById("start").onclick = function() {
+    this.disabled = true;
+    startGame();
+  }
+};

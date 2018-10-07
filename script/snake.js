@@ -217,8 +217,10 @@ Game.Snake = function(elementId, conf) {
  * Window Load
  */
 window.onload = function() {
-  var btn = document.getElementById("start");
-  btn.addEventListener("click", startGame);
+  document.getElementById("start").onclick = function() {
+    this.disabled = true;
+    startGame();
+  }
 };
 function startGame() {
   var snake = new Game.Snake('stage', {fps: 100, size: 4});
