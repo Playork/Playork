@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Playork</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/gobang.css" />
+  <script src="../script/jquery.min.js"></script>
+  <script src="../script/gobang.js"></script>
+</head>
+<body>
+  <div class="outer-container">
+  <button class="hard-reset">Reset All</button>
+  <p class="score-1"><span class="points"></span><span class="name"></span></p>
+  <i class="points-divider">&#124;</i>
+  <p class="score-2"><span class="points"></span><span class="name"></span></p>
+  <div class="player-one-turn">
+    <p></p>
+  </div>
+  <div class="player-two-turn">
+    <p></p>
+  </div>
+  <div class="board-container">
+    <div class="game-starter">
+        <p>Would you like to be X or O?</p>
+        <button class="choose-x">X</button>
+        <button class="choose-o">O</button>
+        <button class="back-button">Back</button>
+      </div>
+      <div class="game-choice">
+        <p>How do you want to play?</p>
+        <button class="one-player">One Player</button>
+        <button class="two-player">Two Player</button>
+      </div>
+    <div class="game-board">
+      <div class="draw-message">
+        <p>It was a draw..</p>
+      </div>
+      <div class="lose-message">
+        <p>Uh oh, you lost..</p>
+      </div>
+      <div class="win-message">
+        <p>You Won!!! :)</p>
+      </div>
+      <canvas id="myCanvas"></canvas>
+      <ul class="boxes">
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

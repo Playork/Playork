@@ -41,7 +41,7 @@ body{
     text-decoration: none;
     color:#3fe415;
     border-radius: 10px;
-    text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);  
 }
 .a:hover {
     color:green;
