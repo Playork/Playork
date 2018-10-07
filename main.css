@@ -5,6 +5,7 @@ body{
     font: caption;
     min-width: 910px;
     overflow-x:hidden;
+    overflow-y:hidden;
 }
 .nav{
     height: 60px;
