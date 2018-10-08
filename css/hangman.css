@@ -32,11 +32,11 @@ button .pull-right{
   background-color 0.2s;
 }
 .letter-button {
-  border: 1px solid rgb(60, 160, 210);
-  color: rgb(60, 160, 210);
+  border: 1px solid rgb(107, 176, 221);
+  color: rgb(107, 176, 221);
 }
 .letter-button:hover {
-  background-color: rgb(60, 160, 210);
+  background-color: rgb(107, 176, 221);
   color: white;
   cursor: pointer;
 }
