@@ -21,32 +21,35 @@ body {
     background-color: #444;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     border-radius: 30px;
-    padding-bottom: 15px;
+    height: 100%;
 }
 
 .task-list input, .task-list textarea{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     width: 17.5vw;
     margin: 1px 5px;
+    border-radius: 20px;
 }
 
 .task-list input{
-    height: 30px;
+    height: 40px;
+}
+
+.task-list textarea {
+    height:200px;
 }
 
 .todo-task{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: #fff;
     width: 16.5vw;
-    margin: 5px;
-    padding: 5px;
+    margin: 5px auto;
 }
 
 .task-list input[type="button"]{
     width: 100px;
     margin: 5px;
-
 }
 
 .todo-task > .task-header{

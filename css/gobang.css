@@ -13,7 +13,7 @@ li {
   background: #444;
   box-shadow: inset -1px 1px 7px rgba(0,0,0,.2), inset 1px -1px 7px rgba(0,0,0,.2), 1px 12px 5px rgba(0,0,0,.4), 4px 3px 8px rgba(0,0,0,.4), 5px 10px 10px rgba(0,0,0,.2), -5px 10px 10px rgba(0,0,0,.4);
   position: relative;
-  border-radius: 10px;
+  border-radius: 20px;
   width: 400px;
   height: 390px;
   margin: 5% 25%;
@@ -29,6 +29,7 @@ li {
   position: relative;
   margin: 0 auto;
   overflow: hidden;
+  border-radius:20px;
 }
 
 .game-board {
@@ -103,6 +104,7 @@ li span {
   z-index: -10;
   color: #aaa;
   text-align: center;
+  border-radius:20px;
 }
 
 .player-one-turn p,
