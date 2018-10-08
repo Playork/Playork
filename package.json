@@ -1,13 +1,13 @@
 ﻿{
   "name": "playork",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Collection of some simple Tools and Games",
   "productName": "Playork",
   "homepage": "http://playork.ml",
   "copyright": "© 2018, Playork",
   "scripts": {
     "start": "electron index.js",
-    "dist": "build --x64 --ia32"
+    "dist": "build --ia32"
   },
   "author": "Ramnath <bekalshenoy@gmail.com>",
   "license": "MIT",
