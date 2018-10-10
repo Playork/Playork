@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<title>Wikipedia Search</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/wiki.css">
+</head>
+
+<body>
+	 <main>
+
+		<div class="container">
+			<a href="#" class="wikipedia-logo"></a>
+
+			<form class="searchForm">
+
+				<div class="searchForm-inputContainer">
+					<input type="search" class="searchForm-input" autofocus />
+					<button class="searchForm-inlineSubmit" type="submit"><img src="../images/search.svg" alt="Magnifying Glass" class="searchForm-searchIcon"></button>
+				</div>
+			</form>
+
+		</div>
+		<div id="grid">
+			<div>
+				<section class="resultsContainer">
+
+				</section>
+
+				<section class="moreResults">
+					<p class="hidden">No more results. Begin a new search.</p>
+					<button class="moreResults-button hidden">Load More</button>
+				</section>
+
+				<div class="loading-indicator hidden"></div>
+			</div>
+			<div>
+				<iframe name="iframe" width="100%" frameborder="0"></iframe>
+			</div>
+		</div>
+			
+
+	</main>
+	<script src="../script/wiki.js"></script>
+		</div>
+</body>
+</html>

@@ -1,0 +1,241 @@
+html, body {
+  box-sizing: border-box;
+  font-size: 10px;
+  margin:0;
+  background:#111;
+  color:white;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  position: absolute;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.wikipedia-logo {
+  display: block;
+  margin: 0 auto 20px;
+  width: 250px;
+  height: 250px;
+  background: url("../images/wikipedia.png") top center no-repeat;
+  background-size: cover;
+}
+
+.searchForm-inputContainer {
+  border-radius: 30px;
+  border: 1px solid #d0d0d0;
+  padding: 0 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.searchForm-inputContainer button {
+  border: none;
+  background-color: white;
+}
+
+.searchForm-input {
+  width: 500px;
+  border: none;
+  border-radius: 3px;
+  padding: 14px 20px;
+  font-size: 1.6rem;
+  outline: none;
+  border-radius: 30px;
+}
+
+.searchForm-input:focus {
+  outline: none;
+}
+
+.searchForm-searchIcon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.searchForm-inlineSubmit {
+  display: none;
+}
+
+.searchForm-button {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  overflow: hidden;
+  vertical-align: top;
+  cursor: pointer;
+  background: transparent;
+  margin: 3rem 0.8rem;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.searchForm-button::before {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  z-index: -1;
+  background-color: #ddd;
+  transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -10em, 0);
+  transition: transform 0.3s, opacity 0.3s, background-color 0.3s, -webkit-transform 0.3s;
+}
+
+.searchForm-button:hover::before {
+  opacity: 1;
+  transform: rotate3d(0, 0, 1, 0deg);
+}
+
+.searchForm-button:hover {
+  color: black;
+  border-color: #555;
+}
+.top-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  transform: translate(0, 0);
+  background-color: #444;
+  padding: 5px 0;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.top-container .wikipedia-logo {
+  width: 60px;
+  height: 60px;
+  margin: 0 20px;
+}
+
+.top-container .searchForm {
+  display: flex;
+  align-items: center;
+}
+
+.top-container .searchForm-input {
+  padding: 10px;
+}
+
+.top-container .searchForm-inlineSubmit {
+display: inline;
+}
+
+.top-container .searchForm-button {
+  display: none;
+}
+
+#grid {
+  display:grid;
+  grid-template-columns: 50% 50%;
+}
+
+.resultsContainer {
+  width: 100%;
+  max-width: 630px;
+  padding-top: 30px;
+}
+
+.resultItem {
+  min-width: 1fr;
+  background:#666;
+  border-left: 10px solid rgb(107, 176, 221);
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+  line-height: 20px;
+  padding: 10px 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border-radius:20px;
+}
+
+.resultItem-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.resultItem-title a {
+  color: #3fe415;
+  text-decoration: none;
+  font-size:25px;
+}
+
+.resultItem-link {
+  visibility: hidden;
+}
+
+.resultItem-snippet {
+  color: white;
+  line-height: 18px;
+  font-size:20px;
+}
+
+.errorMessage {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+
+.errorMessage .keyword {
+  font-weight: 700;
+}
+
+.moreResults {
+  margin-bottom: 50px;
+  width: 100%;
+  max-width: 630px;
+  padding-left: 20px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.moreResults p {
+  font-size: 1.8rem;
+}
+
+.moreResults-button {
+  width: 100%;
+  border: 1px solid #c3c3c3;
+  background-color: #eee;
+  color: #555;
+  font-weight: 600;
+  padding: 15px 0;
+  font-size: 1.6rem;
+  border-radius: 30px;
+}
+
+.moreResults-button:hover {
+  background-color: #ccc;
+}
+
+.hidden {
+  display: none;
+}
+
+.loading-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.666;
+  background-color: #fff;
+  z-index: 2;
+}
+iframe {
+  height: 100%;
+}
