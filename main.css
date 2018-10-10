@@ -8,7 +8,7 @@ body{
     overflow-y:hidden;
 }
 .nav{
-    height: 60px;
+    height: 50px;
     background: #222;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     min-width: 910px;
@@ -39,6 +39,8 @@ body{
     min-width: 700px;
 }
 .a {
+    font-size: 15px;
+    margin:0;
     text-decoration: none;
     color:#3fe415;
     border-radius: 10px;
@@ -48,6 +50,7 @@ body{
     color:green;
 }
 .b {
+    font-size: 25px;
     text-decoration: none;
     color:rgb(107, 176, 221); 
     text-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -66,7 +69,7 @@ button:hover {
 }
 .fix {
     position: fixed;
-    height: 60px;
+    height: 50px;
     background: #222;
     color:#3fe415;
     display: flex;
