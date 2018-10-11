@@ -107,7 +107,7 @@ html, body {
   border-color: #555;
 }
 .top-container {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -149,7 +149,7 @@ display: inline;
 .resultsContainer {
   width: 100%;
   max-width: 630px;
-  padding-top: 30px;
+  padding-top: 100px;
 }
 
 .resultItem {
@@ -238,4 +238,5 @@ display: inline;
 }
 iframe {
   height: 100%;
+  position: fixed;
 }
