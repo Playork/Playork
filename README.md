@@ -4,7 +4,7 @@
 
 ![logo.png](Playork.png)
 
-![Screenshot](http://playork.ml/images/app.png)
+![Screenshot]()
 
 ### Playork is a Collection of Some Simple Tools and Games.
 
