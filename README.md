@@ -17,12 +17,15 @@
 ### In windows Use Official Website to install Stable version[[Link]](http://playork.ml/download.html)
 
 ### For Development Version Follow the instuctions below 
+
 if you want to try it install [nodejs](https://nodejs.org), [git](https://git-scm.com/) and clone this repository
 
 ```bash
  git clone https://github.com/Playork/Playork
 ```
+
 point to source directory
+
 
 ```bash
  cd /path/to/source/Playork
@@ -39,6 +42,7 @@ after this start this application by this command
 ```bash
  npm start
 ```
+
 ## Licence
 
 MIT License (MIT)
