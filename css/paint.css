@@ -2,7 +2,7 @@
 {
     cursor: pointer;
     background-color:white;
-    margin-left:18%;
+    margin-left:23%;
     display: block;
     border-radius: 20px;
     margin-top: 5px;
@@ -75,14 +75,13 @@
 }
 #color
 {
-    margin: auto;
     width: 25px;
     height: 25px;
     border-radius: 100%;
     margin-top: 0;
 }
 #clear {
-    width:80%;
+    width:83%;
 }
 .colors {
     display: grid;
@@ -90,7 +89,7 @@
 }
 .size {
     display: grid;
-    grid-template-columns: 44% 45%;
+    grid-template-columns: 45% 46%;
     margin-bottom:5px;
 }
 #maxl {

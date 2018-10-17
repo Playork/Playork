@@ -48,7 +48,7 @@ body {
 }
 
 .task-list input[type="button"]{
-    width: 100px;
+    width: 120px;
     margin: 5px;
 }
 
@@ -82,7 +82,7 @@ h3{
 .button {
     color: white;
     background: #3fe415;
-    font-size: 15px;
+    font-size: 10px;
     padding:8px 8px;
     border-width: 0;
     border-radius: 20px;
