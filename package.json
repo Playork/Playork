@@ -6,7 +6,7 @@
   "homepage": "http://playork.ml",
   "copyright": "© 2018, Playork",
   "scripts": {
-    "start": "electron main.js",
+    "start": "electron index.js",
     "dist": "build --ia32"
   },
   "author": "Ramnath <bekalshenoy@gmail.com>",
