@@ -29,6 +29,8 @@ body {
     width: 17.5vw;
     margin: 1px 5px;
     border-radius: 20px;
+    background-color: #777;
+    border:1px solid #777;
 }
 
 .task-list input{
@@ -42,9 +44,10 @@ body {
 .todo-task{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #777;
     width: 16.5vw;
     margin: 5px auto;
+    color: #3fe415;
 }
 
 .task-list input[type="button"]{
@@ -81,7 +84,7 @@ h3{
 }
 .button {
     color: white;
-    background: #3fe415;
+    background: #3fe415 !important;
     font-size: 10px;
     padding:8px 8px;
     border-width: 0;

@@ -7,18 +7,18 @@ p {
    font-size: 0px;
 }
 td {
-    text-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    cursor: pointer;
     border-radius: 60px;
     width: 19vw; 
     height: 12.2vh;  
     text-align: center; 
     font-size: 25px; 
     font-weight: bold; 
-    color: white; 
-    background-color: #3fe415;
+    color: rgb(107, 176, 221); 
+    background-color: #444;
 }
 td:hover {
-   background-color: green;
+   background-color: #777;
 }
 input {
    text-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -30,10 +30,14 @@ input {
    font-size: 25px; 
    font-weight: bold; 
    background-color: #111;
-   color:white;
+   color: #3fe415;
 }
 #shiftBtn {
-   background-color: yellow;
+   background-color: #444;
+   cursor: pointer;
+}
+#shiftBtn:hover {
+   background-color: #777;
 }
 table {
    width:80%;

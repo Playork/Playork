@@ -124,7 +124,7 @@ Game.Draw = function(context, snake) {
       snake.stage.direction = keyPress;
     }
     
-    // Draw White Stage
+    // Draw Stage
 		context.fillStyle = "#111";
 		context.fillRect(0, 0, snake.stage.width, snake.stage.height);
 		
@@ -181,7 +181,7 @@ Game.Draw = function(context, snake) {
   
   // Draw Cell
   this.drawCell = function(x, y) {
-    context.fillStyle = '#bbb';
+    context.fillStyle = '#3fe415';
     context.beginPath();
     context.arc((x * snake.stage.conf.cw + 6), (y * snake.stage.conf.cw + 6), 4, 0, 2*Math.PI, false);    
     context.fill();

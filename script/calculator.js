@@ -3,7 +3,7 @@ function shiftFn(ken) {
     var arr = document.getElementsByTagName("td") ;
     if (ken == 1) {
         shift.setAttribute("onclick", "shiftFn(0)") ;
-        shift.style.backgroundColor = "orange" ;
+        shift.style.backgroundColor = "#222" ;
         arr[2].innerHTML = "sin<sup>-1</sup>" ;
         arr[2].setAttribute("onclick", "trigo1('sin')") ;
         arr[3].innerHTML = "cos<sup>-1</sup>" ;
@@ -16,7 +16,7 @@ function shiftFn(ken) {
         arr[28].setAttribute("onclick", "piOrE('e')") ;
     } else {
         shift.setAttribute("onclick", "shiftFn(1)") ;
-        shift.style.backgroundColor = "yellow" ;
+        shift.style.backgroundColor = "#444" ;
         arr[2].innerHTML = "sin" ;
         arr[2].setAttribute("onclick", "trigo('sin')") ;
         arr[3].innerHTML = "cos" ;

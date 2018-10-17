@@ -122,7 +122,7 @@ function moveEverything() {
 
 function drawNet() {
 	for(var i=0;i<canvas.height;i+=40) {
-		colorRect(canvas.width/2-1,i,2,20,'white');
+		colorRect(canvas.width/2-1,i,2,20,'#3fe415');
 	}
 }
 
@@ -130,7 +130,7 @@ function drawEverything() {
 	colorRect(0,0,canvas.width,canvas.height,'#444');
 
 	if(showingWinScreen) {
-		canvasContext.fillStyle = 'white';
+		canvasContext.fillStyle = '#3fe415';
 
 		if(player1Score >= WINNING_SCORE) {
 			canvasContext.fillText("Left Player Won", 350, 200);
@@ -144,9 +144,9 @@ function drawEverything() {
 
 	drawNet();
 
-	colorRect(0,paddle1Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'white');
+	colorRect(0,paddle1Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'rgb(107, 176, 221)');
 
-	colorRect(canvas.width-PADDLE_THICKNESS,paddle2Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'white');
+	colorRect(canvas.width-PADDLE_THICKNESS,paddle2Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'rgb(107, 176, 221)');
 
 	colorCircle(ballX, ballY, 10, '#3fe415');
 
