@@ -102,34 +102,5 @@ const template = [
     ]
   }
 ]
-
-if (process.platform === 'darwin') {
-  const name = app.getName()
-  template.unshift({
-    label: name,
-    submenu: [
-      {
-        role: 'quit'
-      }
-    ]
-  })
-  template[3].submenu = [
-    {
-      label: 'Close',
-      accelerator: 'CmdOrCtrl+W',
-      role: 'close'
-    },
-    {
-      label: 'Minimize',
-      accelerator: 'CmdOrCtrl+M',
-      role: 'minimize'
-    },
-    {
-      label: 'Zoom',
-      role: 'zoom'
-    }
-  ]
-}
-
 const menu = Menu.buildFromTemplate(template)
 Menu.setApplicationMenu(menu)
