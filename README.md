@@ -6,8 +6,6 @@
 
 ![Screenshot](https://user-images.githubusercontent.com/38488260/46848393-30958b80-ce07-11e8-9f9c-bf4e888d3c63.png)
 
-project is in break for some days
-
 ### Playork is a Collection of Some Simple Tools and Games.
 
 ### If you like my App please consider buying me a coffee at [HERE!](http://buymeacoff.ee/playork)
