@@ -1221,4 +1221,3 @@ window.onload = function(){
         }
     }
 }
-//chooseTurn();

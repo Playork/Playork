@@ -100,13 +100,7 @@ Component.Snake = function(canvas, conf) {
   
   // Restart Stage
   this.restart = function() {
-    this.stage.length            = [];
-    this.stage.food              = {};
-    this.stage.score             = 0;
-    this.stage.direction         = 'right';
-    this.stage.keyEvent.pressKey = null;
-    this.initSnake();
-    this.initFood();
+    location.reload();
   };
 };
 
