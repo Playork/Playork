@@ -29,17 +29,12 @@ html, body {
 
 .searchForm-inputContainer {
   border-radius: 30px;
-  border: 1px solid #d0d0d0;
+  border: 1px solid #777;
   padding: 0 10px;
-  background-color: white;
+  background-color: #777;
   display: flex;
   align-items: center;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-.searchForm-inputContainer button {
-  border: none;
-  background-color: white;
 }
 
 .searchForm-input {
@@ -50,6 +45,8 @@ html, body {
   font-size: 1.6rem;
   outline: none;
   border-radius: 30px;
+  background: #777;
+  color: #3fe415;
 }
 
 .searchForm-input:focus {
@@ -60,10 +57,13 @@ html, body {
   width: 20px;
   height: 20px;
   cursor: pointer;
+  background: #777;
 }
 
 .searchForm-inlineSubmit {
   display: none;
+  background: #777;
+  border:0;
 }
 
 .searchForm-button {
@@ -155,14 +155,14 @@ display: inline;
 .resultItem {
   min-width: 1fr;
   background:#666;
-  border-left: 10px solid rgb(107, 176, 221);
   margin-bottom: 30px;
   font-size: 1.3rem;
   line-height: 20px;
   padding: 10px 10px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  border-radius:20px;
+  border-radius:60px;
+  padding-left:25px;
 }
 
 .resultItem-title {
@@ -181,7 +181,7 @@ display: inline;
 }
 
 .resultItem-snippet {
-  color: white;
+  color: rgb(107, 176, 221);
   line-height: 18px;
   font-size:20px;
 }
