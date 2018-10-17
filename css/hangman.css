@@ -32,7 +32,7 @@ button .pull-right{
   background-color 0.2s;
 }
 .letter-button {
-  border: 1px solid rgb(107, 176, 221);
+  border: 1px solid #3fe415;
   color: rgb(107, 176, 221);
 }
 .letter-button:hover {
@@ -100,6 +100,7 @@ button .pull-right{
   padding: 0.3em 0.25em;
   border: 1px solid #3fe415;
   border-radius: 100% 100% 0 0 ;
+  color:rgb(107, 176, 221);
 }
 .modal-content {
   background: #222;
