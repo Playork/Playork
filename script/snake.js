@@ -119,7 +119,7 @@ Game.Draw = function(context, snake) {
     }
     
     // Draw Stage
-		context.fillStyle = "#111";
+		context.fillStyle = "#444";
 		context.fillRect(0, 0, snake.stage.width, snake.stage.height);
 		
     // Snake Position
