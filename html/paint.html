@@ -36,6 +36,7 @@
             </div>
            <div id='colors'>
             <canvas id='canvas' width="600" height="315"></canvas>
+            <button  onclick="takeScreenShot()">Save</button>
             <h4>Line width:</h4>
            <form>
             <div id="maxl">
@@ -74,5 +75,23 @@
            <div>
             <button id="clear" onclick='clearCanvas()'><img src="../images/trash.png" width="15px" height="15px"/>clear</button>
            </div>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+           <script>
+            var takeScreenShot = function() {
+            html2canvas(document.getElementById("canvas"), {
+            onrendered: function (canvas) {
+            var tempcanvas=document.createElement('canvas');
+            tempcanvas.width=600;
+            tempcanvas.height=315;
+            var context=tempcanvas.getContext('2d');
+            context.drawImage(canvas,0,0,600,315,0,0,600,315);
+            var link=document.createElement("a");
+            link.href=tempcanvas.toDataURL('image/jpg');   //function blocks CORS
+            link.download = 'screenshot.jpg';
+            link.click();
+            }
+            });
+            }
+           </script>
 </body>
 </html>
