@@ -39,7 +39,7 @@ body{
     min-width: 700px;
 }
 .a {
-    font-size: 15px;
+    font-size: 13.5px;
     margin:0;
     text-decoration: none;
     color:#3fe415;
@@ -50,7 +50,7 @@ body{
     color:green;
 }
 .b {
-    font-size: 25px;
+    font-size: 22.5px;
     text-decoration: none;
     color:rgb(107, 176, 221); 
     text-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
