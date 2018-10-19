@@ -196,4 +196,5 @@ display: inline;
 iframe {
   height: 100%;
   position: fixed;
+  width:50%;
 }
