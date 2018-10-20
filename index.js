@@ -51,9 +51,6 @@ const template = [
     label: 'View',
     submenu: [
       {
-        type: 'separator'
-      },
-      {
         role: 'resetzoom'
       },
       {
