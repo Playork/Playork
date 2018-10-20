@@ -51,13 +51,6 @@ const template = [
     label: 'View',
     submenu: [
       {
-        label: 'Reload',
-        accelerator: 'CmdOrCtrl+R',
-        click (item, focusedWindow) {
-          if (focusedWindow) focusedWindow.reload()
-        }
-      },
-      {
         type: 'separator'
       },
       {
@@ -78,7 +71,7 @@ const template = [
     ]
   },
   {
-    role: 'window',
+    role: 'Window',
     submenu: [
       {
         role: 'minimize'
@@ -89,7 +82,7 @@ const template = [
     ]
   },
   {
-    role: 'help',
+    role: 'Help',
     submenu: [
       {
         label: 'Bug Report',
@@ -97,7 +90,7 @@ const template = [
       },
       {
         label: 'Contact US',
-        click () { require('electron').shell.openExternal('https://bekalshenoy.wixsite.com/website/contact-1') }
+        click () { require('electron').shell.openExternal('http://playork.ml/contact.html') }
       }
     ]
   }
