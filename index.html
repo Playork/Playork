@@ -28,20 +28,32 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         <div class="float">
         <div class="float-left-area">
             <div class="inner-left">
-            <h1 class="b">Tools</h1>
+            <div class="b">
+            <h1>Tools</h1>
+            <div class="app d">
             <div class="selecting c"><a target="iframe" class="a" href="html/calculator.html"><h2>Calculator</h2></a></div>
             <div class="selecting c"><a target="iframe" class="a" href="html/note.html"><h2>Note</h2></a></div>
             <div class="selecting c"><a target="iframe" class="a" href="html/paint.html"><h2>Paint</h2></a></div>
-            <div class="selecting c"><a target="iframe" class="a" href="html/to-do.html"><h2>To-Do</h2></a></div>
-            <h1 class="b">Games</h1>
+            <div class="selecting c"><a target="iframe" class="a" href="html/to-do.html"><h2>To-Do</h2></a></div>    
+            </div>
+            </div>
+            <div class="b">
+            <h1>Games</h1>
+            <div class="app d">
             <div class="selecting c"><a target="iframe" class="a" href="html/ball.html"><h2>Ball Game</h2></a></div>
             <div class="selecting c"><a target="iframe" class="a" href="html/brick.html"><h2>Brick Game</h2></a></div>
             <div class="selecting c"><a target="iframe" class="a" href="html/chess.html"><h2>Chess</h2></a></div>
             <div class="selecting c"><a target="iframe" class="a" href="html/gobang.html"><h2>Gobang</h2></a></div>
             <div class="selecting c"><a target="iframe" class="a" href="html/hangman.html"><h2>HangMan</h2></a></div>
             <div class="selecting c"><a target="iframe" class="a" href="html/snake.html"><h2>Snake Game</h2></a></div>
-            <h1 class="b">Online</h1>
+            </div>
+            </div>
+            <div class="b">
+            <h1>Online</h1>
+            <div class="app d">
             <div class="selecting c"><a target="_blank" class="a" href="html/wiki.html"><h2>Wikipedia</h2></a></div>
+            </div>
+            </div>
         </div>
         </div>
         <div class="float-right-area">
@@ -56,6 +68,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                 $('.c').removeClass('select');
                 $('.c').addClass('selecting');
                 $(this).toggleClass('select');
+	        });
+            $('.b').click(function() {
+                $('.d').removeClass('appdown');
+                $('.d').addClass('app');
+                $('.app',this).toggleClass('appdown');
 	        });
 	</script>
 </body>
