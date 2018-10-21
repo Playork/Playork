@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Playork</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/jquery.ui.min.css" />
+        <link rel="stylesheet" href="../css/note.css" />
+        <link rel="stylesheet" href="../main.css" />
+    </head>
+
+    <body class="well">
+        <div id="container">
+	    
+   	   <div class="task-list">
+                <h3 style="color:rgb(107, 176, 221);">Add a Note</h3>
+                <form id="todo-form">
+                    <input type="text" placeholder="Name" style="color:#3fe415"/>
+                    <textarea placeholder="Notes....." style="color:#3fe415"></textarea>
+                    <input class="blank"/>
+                    <input class="button" type="button" value="Add Note" onclick="todo.add();" />
+                </form>
+
+                <input class="button" type="button" value="Clear Notes" onclick="todo.clear();" />
+
+                <div id="delete-div">
+                    Drag Here to Delete
+                </div>
+            </div>
+
+            <div class="task-list task-container" id="pending">
+                <h3 style="color:rgb(107, 176, 221);">Pending</h3>
+            </div>
+
+            <div style="clear:both;"></div>
+	    <script type="text/javascript" src="../script/jquery.min.js"></script>
+            <script type="text/javascript" src="../script/bootstrap.min.js"></script>
+            <script type="text/javascript" src="../script/jquery.ui.min.js"></script>
+            <script type="text/javascript" src="../script/note.js"></script>
+
+            <script type="text/javascript">
+                $(".task-container").droppable();
+                $(".todo-task").draggable({ revert: "valid", revertDuration:200 });
+                todo.init();
+            </script>
+
+        </div>
+    </body>
+</html>
