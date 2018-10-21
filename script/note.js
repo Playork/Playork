@@ -1,5 +1,5 @@
 var todo = todo || {},
-    data = JSON.parse(localStorage.getItem("todoData"));
+    data = JSON.parse(localStorage.getItem("Note"));
 
 data = data || {};
 
@@ -47,7 +47,7 @@ data = data || {};
 
                             // Updating Local Storage
                             data[id] = object;
-                            localStorage.setItem("todoData", JSON.stringify(data));
+                            localStorage.setItem("Note", JSON.stringify(data));
 
                             // Hiding Delete Area
                             $("#" + defaults.deleteDiv).hide();
@@ -68,7 +68,7 @@ data = data || {};
 
                 // Updating local storage
                 delete data[id];
-                localStorage.setItem("todoData", JSON.stringify(data));
+                localStorage.setItem("Note", JSON.stringify(data));
 
                 // Hiding Delete Area
                 $("#" + defaults.deleteDiv).hide();
@@ -158,7 +158,7 @@ data = data || {};
 
         // Saving element in local storage
         data[id] = tempData;
-        localStorage.setItem("todoData", JSON.stringify(data));
+        localStorage.setItem("Note", JSON.stringify(data));
 
         // Generate Todo Element
         generateElement(tempData);
@@ -201,7 +201,7 @@ data = data || {};
 
     todo.clear = function () {
         data = {};
-        localStorage.setItem("todoData", JSON.stringify(data));
+        localStorage.setItem("Note", JSON.stringify(data));
         $("." + defaults.todoTask).remove();
     };
 
