@@ -139,7 +139,7 @@ data = data || {};
         date = inputs[2].value;
 
         if (!title) {
-            generateDialog(errorMessage);
+            alert(errorMessage);
             return;
         }
 
@@ -169,35 +169,6 @@ data = data || {};
         inputs[2].value = "";
     };
 
-    var generateDialog = function (message) {
-        var responseId = "response-dialog",
-            title = "Message",
-            responseDialog = $("#" + responseId),
-            buttonOptions;
-
-        if (!responseDialog.length) {
-            responseDialog = $("<div />", {
-                    title: title,
-                    id: responseId
-            }).appendTo($("body"));
-        }
-
-        responseDialog.html(message);
-
-        buttonOptions = {
-            "Ok" : function () {
-                responseDialog.dialog("close");
-            }
-        };
-
-	    responseDialog.dialog({
-            autoOpen: true,
-            width: 400,
-            modal: true,
-            closeOnEscape: true,
-            buttons: buttonOptions
-        });
-    };
 
     todo.clear = function () {
         data = {};

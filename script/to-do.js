@@ -28,22 +28,7 @@ data = data || {};
         $.each(data, function (index, params) {
             generateElement(params);
         });
-
-        /*generateElement({
-            id: "123",
-            code: "1",
-            title: "asd",
-            date: "22/12/2013",
-            description: "Blah Blah"
-        });*/
-
-        /*removeElement({
-            id: "123",
-            code: "1",
-            title: "asd",
-            date: "22/12/2013",
-            description: "Blah Blah"
-        });*/
+        
 
         // Adding drop function to each category of task
         $.each(codes, function (index, value) {
@@ -62,6 +47,7 @@ data = data || {};
 
                             // Generating new element
                             generateElement(object);
+
 
                             // Updating Local Storage
                             data[id] = object;
@@ -157,7 +143,7 @@ data = data || {};
         date = inputs[2].value;
 
         if (!title) {
-            generateDialog(errorMessage);
+            alert(errorMessage);
             return;
         }
 
@@ -183,37 +169,6 @@ data = data || {};
         inputs[1].value = "";
         inputs[2].value = "";
     };
-
-    var generateDialog = function (message) {
-        var responseId = "response-dialog",
-            title = "Message",
-            responseDialog = $("#" + responseId),
-            buttonOptions;
-
-        if (!responseDialog.length) {
-            responseDialog = $("<div />", {
-                    title: title,
-                    id: responseId
-            }).appendTo($("body"));
-        }
-
-        responseDialog.html(message);
-
-        buttonOptions = {
-            "Ok" : function () {
-                responseDialog.dialog("close");
-            }
-        };
-
-	    responseDialog.dialog({
-            autoOpen: true,
-            width: 400,
-            modal: true,
-            closeOnEscape: true,
-            buttons: buttonOptions
-        });
-    };
-
     todo.clear = function () {
         data = {};
         localStorage.setItem("todoData", JSON.stringify(data));
