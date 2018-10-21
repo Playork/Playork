@@ -10,7 +10,7 @@ require('electron-context-menu')({
 });
 
 app.on('ready', () => {
-  let win = new BrowserWindow({ width: 800, height: 600, icon:'playork.png', title: "Playork", backgroundColor: '#111', show: false})
+  let win = new BrowserWindow({ width: 1100, height: 690, icon:'playork.png', title: "Playork", backgroundColor: '#111', show: false})
   win.loadURL(`file://${__dirname}/index.html`)
   win.on('ready-to-show', function() { 
   win.show(); 
