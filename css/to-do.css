@@ -48,6 +48,7 @@ body {
     width: 16.5vw;
     margin: 5px auto;
     color: #3fe415;
+    word-wrap: break-word;
 }
 
 .task-list input[type="button"]{
