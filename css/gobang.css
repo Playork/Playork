@@ -30,6 +30,7 @@ li {
   margin: 0 auto;
   overflow: hidden;
   border-radius:20px;
+  margin-top:10px;
 }
 
 .game-board {
@@ -279,7 +280,6 @@ i.win {
 } 
 .back-button:hover {
   border: none;
-  text-decoration: underline;
 }
 
 button {

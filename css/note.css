@@ -31,6 +31,8 @@ body {
     border-radius: 20px;
     background-color: #777;
     border:1px solid #777;
+    font-family: Lobster;
+    font-size:1.2em;
 }
 
 .task-list input{
@@ -43,13 +45,15 @@ body {
 
 .todo-task{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: #777;
-    width: 23.5%;
+    width: 18vw;
     margin: 5px;
     color: #3fe415;
     float: left;
     word-wrap: break-word;
+    padding:8px;
+    font-size:1.6em;
 }
 
 .task-list input[type="button"]{
@@ -107,5 +111,5 @@ h3{
     width: 60vw;
 }
 .task-date {
-    padding-top:100%;
+    padding-top:29vh;
 }

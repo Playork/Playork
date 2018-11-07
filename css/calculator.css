@@ -24,13 +24,16 @@ input {
    text-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
    border-radius: 60px;
-   width: 100%; 
+   width: 96.3%; 
    height: 100%; 
    border: none; 
    font-size: 25px; 
    font-weight: bold; 
    background-color: #111;
    color: #3fe415;
+   font-family: Lobster;
+   padding-left:20px;
+   padding-right:20px;
 }
 #shiftBtn {
    background-color: #444;

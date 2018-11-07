@@ -1,9 +1,15 @@
+@font-face {
+  font-family: 'Lobster';
+  src: url(../font/Lobster.woff2) format('woff2');
+}
+
 html, body {
   box-sizing: border-box;
   font-size: 10px;
   margin:0;
   background:#111;
   color:white;
+  font-family: Lobster;
 }
 
 *, *:before, *:after {
@@ -43,11 +49,12 @@ html, body {
   border: none;
   border-radius: 3px;
   padding: 14px 20px;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   outline: none;
   border-radius: 30px;
   background: #777;
   color: #3fe415;
+  font-family: Lobster;
 }
 
 .searchForm-input:focus {
@@ -193,6 +200,7 @@ display: inline;
   background-color: #fff;
   z-index: 2;
 }
+
 iframe {
   height: 100%;
   position: fixed;
