@@ -1,18 +1,11 @@
-button .pull-right{
-    margin-top:1em;
-}
-.hanghead{
-    display:block;
-    width: 64%;
-    margin: 1em auto;
-}
+
 #alphabet-keypad, #hangman-graphic, #letter-graveyard {
   display: inline-block;
   vertical-align: middle;
   float: none;
 }
 .row {
-  width: 80%;
+  width: 100%;
 }
 #alphabet-keypad {
   margin-left: 3%;
@@ -65,11 +58,6 @@ button .pull-right{
 }
 .hangman-controls {
   margin-top: 3em;
-  text-align: center;
-}
-
-.title {
-  margin: 0.5em 0;
   text-align: center;
 }
 #letter-graveyard {

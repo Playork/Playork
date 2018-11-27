@@ -10,87 +10,10 @@ require('electron-context-menu')({
 });
 
 app.on('ready', () => {
-  let win = new BrowserWindow({ width: 1100, height: 690, icon:'playork.png', title: "Playork", backgroundColor: '#111', show: false})
+  let win = new BrowserWindow({ width: 800, height: 600, icon:'playork.png',backgroundColor: '#fff', title: "Playork", frame: false})
   win.loadURL(`file://${__dirname}/index.html`)
   win.on('ready-to-show', function() { 
   win.show(); 
   win.focus();
   });
 });
-const template = [
-  {
-    label: 'Edit',
-    submenu: [
-      {
-        role: 'undo'
-      },
-      {
-        role: 'redo'
-      },
-      {
-        type: 'separator'
-      },
-      {
-        role: 'cut'
-      },
-      {
-        role: 'copy'
-      },
-      {
-        role: 'paste'
-      },
-      {
-        role: 'delete'
-      },
-      {
-        role: 'selectall'
-      }
-    ]
-  },
-  {
-    label: 'View',
-    submenu: [
-      {
-        role: 'resetzoom'
-      },
-      {
-        role: 'zoomin'
-      },
-      {
-        role: 'zoomout'
-      },
-      {
-        type: 'separator'
-      },
-      {
-        role: 'togglefullscreen'
-      }
-    ]
-  },
-  {
-    role: 'Window',
-    submenu: [
-      {
-        role: 'minimize'
-      },
-      {
-        role: 'close'
-      }
-    ]
-  },
-  {
-    role: 'Help',
-    submenu: [
-      {
-        label: 'Bug Report',
-        click () { require('electron').shell.openExternal('https://github.com/Playork/Playork/issues') }
-      },
-      {
-        label: 'Contact US',
-        click () { require('electron').shell.openExternal('http://playork.ml/contact.html') }
-      }
-    ]
-  }
-]
-const menu = Menu.buildFromTemplate(template)
-Menu.setApplicationMenu(menu)

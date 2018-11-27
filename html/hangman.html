@@ -2,14 +2,39 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Playork</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/hangman.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
 </head>
-<body style="background: #111;color:white;">
+<body style="color:#fff;">
+    <div>
+        <header id="titlebar">
+                <div id="drag-region">
+                        <div id="window-title">
+                                <span>Playork</span>
+                        </div>
+                        <div id="window-controls">
+                                <div class="button" id="min-button">
+                                  <span>&#xE921;</span>
+                                </div>
+                                <div class="button" id="max-button">
+                                  <span>&#xE922;</span>
+                                </div>
+                                <div class="button" id="restore-button">
+                                  <span>&#xE923;</span>
+                                </div>
+                                <div class="button" id="close-button">
+                                  <span>&#xE8BB;</span>
+                                </div>
+                        </div>
+                </div>
+        </header>
+  <script>
+    require('./../renderer.js')
+  </script>
+  </div>
           <div class="modal fade" id="congratulatory_message" role="dialog" data-backdrop="static" data-keyboard="false">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -103,9 +128,9 @@
                 </div>
               </div>
               <div class="row text-center">
-                <div id="word-to-guess" ></div>
+                <div id="word-to-guess" style="color:#222;"></div>
               </div>
-	      <script src="../script/jquery.min.js"></script>
+	      <script>window.$ = window.jQuery = require('../script/jquery.min.js');</script>
               <script src="../script/bootstrap.min.js"></script>
               <script src="../script/hangman.js"></script>
 </body>

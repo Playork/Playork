@@ -10,11 +10,37 @@
     <link href="../css/paint.css" rel="stylesheet" type="text/css">
 </head>
 <body style="color:white;">
-            <div id=colors>
+        <div>
+                <header id="titlebar">
+                        <div id="drag-region">
+                                <div id="window-title">
+                                        <span>Playork</span>
+                                </div>
+                                <div id="window-controls">
+                                        <div class="button" id="min-button">
+                                          <span>&#xE921;</span>
+                                        </div>
+                                        <div class="button" id="max-button">
+                                          <span>&#xE922;</span>
+                                        </div>
+                                        <div class="button" id="restore-button">
+                                          <span>&#xE923;</span>
+                                        </div>
+                                        <div class="button" id="close-button">
+                                          <span>&#xE8BB;</span>
+                                        </div>
+                                </div>
+                        </div>
+                </header>
+          <script>
+            require('./../renderer.js')
+          </script>
+          </div>
+            <div id=colors class="colors">
+                <div id="margin">
                 <p><input id='color' type="color" onchange='changeColor("value")' ontouchstart='changeColor("value")'/>
-                <button id='colorValue' onclick='newColor()' >GO</button>(pick a color and press go)</p>
-              </div>
-            <div id="colors" class="colors">
+                <button id='colorValue' onclick='newColor()' >GO</button>(1.pick color 2.press GO)</p>
+                </div>
                 <button id='black' onclick='changeColor("black")' ontouchstart='changeColor("black")'></button>
                 
                 <button id='red' onclick='changeColor("red")' ontouchstart='changeColor("red")'></button>
@@ -37,7 +63,7 @@
            <div id='colors'>
             <canvas id='canvas' width="600" height="315"></canvas>
             <button  onclick="takeScreenShot()">Save</button>
-            <h4>Line width:</h4>
+            <h4 style="color:#222;">Line width:</h4>
            <form>
             <div id="maxl">
                 <label class="radio inline"> 

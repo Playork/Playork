@@ -4,16 +4,11 @@
 }
 
 html, body {
-  box-sizing: border-box;
   font-size: 10px;
   margin:0;
-  background:#111;
+  background:#222;
   color:white;
   font-family: Lobster;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
 }
 
 .container {
@@ -22,6 +17,7 @@ html, body {
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  margin-top:35px;
 }
 
 .wikipedia-logo {

@@ -1,19 +1,14 @@
 .nano .pane   { background: #888; }
 .nano .slider { background: #111; }
 
-body {
-    background-color: #111!important;
-    border: 0 !important;
-}
-
 #container{
     margin: 0;
-    width: 1060px;
+    margin-top:5%;
     min-height: 100%;
     background-color: transparent;
     border: 0;
     display: grid;
-    grid-template-columns: 19.5vw 19.5vw 19.5vw 19.5vw;
+    grid-template-columns:1fr 3fr;
 }
 
 .task-list{
@@ -22,11 +17,12 @@ body {
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     border-radius: 30px;
     height: 100%;
+
 }
 
-.task-list input, .task-list textarea{
+.task-list input[type="text"], .task-list textarea{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    width: 17.5vw;
+    width: 23vw;
     margin: 1px 5px;
     border-radius: 20px;
     background-color: #777;
@@ -47,7 +43,7 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border-radius: 20px;
     background-color: #777;
-    width: 18vw;
+    width: 28%;
     margin: 5px;
     color: #3fe415;
     float: left;
@@ -90,7 +86,7 @@ h3{
 }
 .button {
     color: white;
-    background: #3fe415 !important;
+    background: #3fe415;
     font-size: 10px;
     padding:8px 8px;
     border-width: 0;
@@ -101,15 +97,5 @@ h3{
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 .blank {
-    box-shadow: none !important;
-    height: 0 !important;
-    width: 0 !important;
-    margin: 0 0 !important;
-    padding: 0 0 !important;
-}
-#pending {
-    width: 60vw;
-}
-.task-date {
-    padding-top:29vh;
+    display: none;
 }

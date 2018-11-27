@@ -2,45 +2,23 @@
   font-family: 'Lobster';
   src: url(font/Lobster.woff2) format('woff2');
 }
+@font-face {
+    font-family: segoe;
+    src: url(font/SegMDL2.ttf);
+}
 body{
     padding:0;
     margin:0;
-    background: #111;
-    min-width: 910px;
+    padding-top:40px;
+    background-color:white;
+    background:linear-gradient(90deg, 
+    rgba(255, 255, 0, 0.2) 0%, 
+    rgba(255, 0, 255, 0.2) 25%, 
+    rgba(0, 255, 255, 0.2) 75%, 
+    rgba(255, 255, 255, 0) 100%);
     overflow-x:hidden;
     overflow-y:hidden;
     font-family: Lobster;
-}
-.nav{
-    height: 50px;
-    background: #222;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    min-width: 910px;
-}
-.float {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-.float-left-area  {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    background:#333;
-    height:155vh;
-    min-width: 210px;
-}
-
-.float-right-area {
-    color: #eee;
-    min-width: 700px;
-}
-
-.inner-left {
-    margin-left: 3%;
-    position: fixed;
-    min-width: 210px;
-}
-.inner-right {
-    min-width: 700px;
 }
 .a {
     font-size: 16px;
@@ -49,6 +27,7 @@ body{
     color:#3fe415;
     border-radius: 10px;
     text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    line-height: 150%;
 }
 .a:hover {
     color:green;
@@ -59,6 +38,7 @@ body{
     color:rgb(107, 176, 221); 
     text-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     cursor:pointer;
+    text-align: center;
 }
 button {
     color: white;
@@ -75,30 +55,13 @@ button:hover {
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     cursor: pointer;
 }
-.fix {
-    position: fixed;
-    height: 50px;
-    background: #222;
-    color:#3fe415;
-    display: flex;
-    width:100%;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    min-width: 910px;
-}
-.fix :nth-child(2) {
-    margin-left: auto;
-}
-.select {
-    background: #555;
-    width:80%;
-}
 .selecting:hover {
     background: #555;
     border-radius: 20px;
-    width:80%;
-}
-iframe {
-    position: fixed;
+    width:46%;
+    margin-left:27%;
+    text-align: center;
+    display: block;
 }
 .button {
     color: white;
@@ -118,9 +81,94 @@ iframe {
 .app {
   overflow: hidden;
   max-height: 0;
-  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 .appdown {
     display: block;
     max-height: 400px;
 }
+.b h1:hover{
+    color:rgb(47, 116, 161);
+}
+.menu{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top:-5%;
+}
+#titlebar {
+    display: block;
+    position: fixed;
+    height: 32px;
+    width: 100%;
+    background: #222;
+    padding: 4px !important;
+    color: #FFF;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 6;
+}
+#titlebar #drag-region {
+    width: 100% !important;
+    height: 100%;
+    -webkit-app-region: drag;
+    display: grid;
+    grid-template-columns: auto 138px;
+}
+  #window-controls {
+    display: grid;
+    grid-template-columns: repeat(3, 46px) !important;
+    position: absolute;
+    top: 0 !important;
+    right: 0 !important;
+    height: 100%;
+    font-size: 5px;
+    -webkit-app-region: no-drag;
+  }
+  #window-controls .button {
+    grid-row: 1 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45% !important;
+    height: 45% !important;
+    font-family: segoe;
+    background: none;
+    user-select: none;
+    cursor: default;
+    opacity: 0.8;
+  }
+  #window-controls #min-button {
+    grid-column: 1;
+  }
+  #window-controls #max-button, #window-controls #restore-button {
+    grid-column: 2;
+  }
+  #window-controls #close-button {
+    grid-column: 3;
+  }
+  #window-controls .button:hover {
+    background: rgba(255,255,255,0.2);
+    opacity: 1;
+  }
+  #window-controls #close-button:hover {
+    background: #E81123;
+  }
+  #window-controls #restore-button {
+    display: none;
+  }
+  #window-title {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 15px;
+    margin-left: 8px;
+    overflow-x: hidden;
+  }
+  #window-title span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5;
+  }

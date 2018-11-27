@@ -10,7 +10,33 @@
     <script src="../script/chess.js"></script>
 </head>
 <body>
-            <div id="container"></div>
+    <div>
+        <header id="titlebar">
+                <div id="drag-region">
+                        <div id="window-title">
+                                <span>Playork</span>
+                        </div>
+                        <div id="window-controls">
+                                <div class="button" id="min-button">
+                                  <span>&#xE921;</span>
+                                </div>
+                                <div class="button" id="max-button">
+                                  <span>&#xE922;</span>
+                                </div>
+                                <div class="button" id="restore-button">
+                                  <span>&#xE923;</span>
+                                </div>
+                                <div class="button" id="close-button">
+                                  <span>&#xE8BB;</span>
+                                </div>
+                        </div>
+                </div>
+        </header>
+  <script>
+    require('./../renderer.js')
+  </script>
+  </div>
+            <div id="container" style="position:absolute;top:37px;"></div>
             <input class="button" type="button" value="Reset" id="reset"/>
             <script>
               document.getElementById("reset").onclick = function() {

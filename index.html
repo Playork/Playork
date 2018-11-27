@@ -19,61 +19,73 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     <script>window.$ = window.jQuery = require('script/jquery.min.js');</script>
 </head>
 <body>
-    <div class="nav">
-    <div class="fix">
-    <a href="html/welcome.html" target="iframe"><img src="images/playork.png" width="15%" style="min-width: 170px;"></a>
-    <a class="b" target="iframe" href="html/help.html" style="font-size: 15px;"><h2>Help</h2></a>
+    <div>
+        <header id="titlebar" style="background: none !important;">
+                <div id="drag-region">
+                        <div id="window-controls">
+                                <div class="button" id="min-button" style="color:black !important;">
+                                  <span>&#xE921;</span>
+                                </div>
+                                <div class="button" id="max-button" style="color:black !important;">
+                                  <span>&#xE922;</span>
+                                </div>
+                                <div class="button" id="restore-button" style="color:black !important;">
+                                  <span>&#xE923;</span>
+                                </div>
+                                <div class="button" id="close-button" style="color:black !important;">
+                                  <span>&#xE8BB;</span>
+                                </div>
+                        </div>
+                </div>
+        </header>
+  <script>
+    require('./renderer.js')
+  </script>
+  </div>
+        
+    <div style="color:#222;font-size: 67px;text-align: center;">
+    <script>
+      document.write(new Date().toLocaleTimeString());
+    </script>
+    <h1 style="font-size:80px;margin-top:0;">
+        Welcome
+    </h1>
     </div>
+    <div class=menu>
+        <div class="b">
+        <h1>Tools</h1>
+        <div class="app d">
+        <div class="selecting c"><a target="_blank" class="a" href="html/calculator.html"><h2>Calculator</h2></a></div>
+        <div class="selecting c"><a target="_blank" class="a" href="html/note.html"><h2>Note</h2></a></div>
+        <div class="selecting c"><a target="_blank" class="a" href="html/paint.html"><h2>Paint</h2></a></div>
+        <div class="selecting c"><a target="_blank" class="a" href="html/to-do.html"><h2>To-Do</h2></a></div>    
+        </div>
+        </div>
+        <div class="b">
+        <h1>Games</h1>
+        <div class="app d">
+        <div class="selecting c"><a target="_blank" class="a" href="html/ball.html"><h2>Ball Game</h2></a></div>
+        <div class="selecting c"><a target="_blank" class="a" href="html/brick.html"><h2>Brick Game</h2></a></div>
+        <div class="selecting c"><a target="_blank" class="a" href="html/chess.html"><h2>Chess</h2></a></div>
+        <div class="selecting c"><a target="_blank" class="a" href="html/gobang.html"><h2>Gobang</h2></a></div>
+        <div class="selecting c"><a target="_blank" class="a" href="html/hangman.html"><h2>HangMan</h2></a></div>
+        <div class="selecting c"><a target="_blank" class="a" href="html/snake.html"><h2>Snake Game</h2></a></div>
+        </div>
+        </div>
+        <div class="b">
+        <h1>Online</h1>
+        <div class="app d">
+        <div class="selecting c"><a target="_blank" class="a" href="html/wiki.html"><h2>Wikipedia</h2></a></div>
+        </div>
+        </div>
     </div>
-        <div class="float">
-        <div class="float-left-area">
-            <div class="inner-left">
-            <div class="b">
-            <h1>Tools</h1>
-            <div class="app d">
-            <div class="selecting c"><a target="iframe" class="a" href="html/calculator.html"><h2>Calculator</h2></a></div>
-            <div class="selecting c"><a target="iframe" class="a" href="html/note.html"><h2>Note</h2></a></div>
-            <div class="selecting c"><a target="iframe" class="a" href="html/paint.html"><h2>Paint</h2></a></div>
-            <div class="selecting c"><a target="iframe" class="a" href="html/to-do.html"><h2>To-Do</h2></a></div>    
-            </div>
-            </div>
-            <div class="b">
-            <h1>Games</h1>
-            <div class="app d">
-            <div class="selecting c"><a target="iframe" class="a" href="html/ball.html"><h2>Ball Game</h2></a></div>
-            <div class="selecting c"><a target="iframe" class="a" href="html/brick.html"><h2>Brick Game</h2></a></div>
-            <div class="selecting c"><a target="iframe" class="a" href="html/chess.html"><h2>Chess</h2></a></div>
-            <div class="selecting c"><a target="iframe" class="a" href="html/gobang.html"><h2>Gobang</h2></a></div>
-            <div class="selecting c"><a target="iframe" class="a" href="html/hangman.html"><h2>HangMan</h2></a></div>
-            <div class="selecting c"><a target="iframe" class="a" href="html/snake.html"><h2>Snake Game</h2></a></div>
-            </div>
-            </div>
-            <div class="b">
-            <h1>Online</h1>
-            <div class="app d">
-            <div class="selecting c"><a target="_blank" class="a" href="html/wiki.html"><h2>Wikipedia</h2></a></div>
-            </div>
-            </div>
-        </div>
-        </div>
-        <div class="float-right-area">
-        <div class="inner-right">
-             <iframe name="iframe" src="html/welcome.html" width="100%" height="100%"  scrolling="no"  frameborder="0"></iframe>
-        </div>
-        </div>
-        </div>
-	<script>window.$ = window.jQuery = require('jquery');</script>
-	<script>
-	        $('.selecting').click(function() {
-                $('.c').removeClass('select');
-                $('.c').addClass('selecting');
-                $(this).toggleClass('select');
-	        });
+    <script>window.$ = window.jQuery = require('jquery');</script>
+    <script>
             $('.b').click(function() {
                 $('.d').removeClass('appdown');
                 $('.d').addClass('app');
                 $('.app',this).toggleClass('appdown');
 	        });
-	</script>
+     </script>
 </body>
 </html>

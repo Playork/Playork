@@ -9,8 +9,8 @@ p {
 td {
     cursor: pointer;
     border-radius: 60px;
-    width: 19vw; 
-    height: 12.2vh;  
+    width: 20vw; 
+    height: 12.8vh;  
     text-align: center; 
     font-size: 25px; 
     font-weight: bold; 
@@ -24,7 +24,7 @@ input {
    text-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
    border-radius: 60px;
-   width: 96.3%; 
+   width: 96.3vw; 
    height: 100%; 
    border: none; 
    font-size: 25px; 
@@ -43,5 +43,5 @@ input {
    background-color: #777;
 }
 table {
-   width:80%;
+   width:100%;
 }

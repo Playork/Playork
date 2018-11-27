@@ -8,6 +8,32 @@
     </head>
 
     <body class="well">
+            <div>
+                    <header id="titlebar">
+                            <div id="drag-region">
+                                    <div id="window-title">
+                                            <span>Playork</span>
+                                    </div>
+                                    <div id="window-controls">
+                                            <div class="button" id="min-button">
+                                              <span>&#xE921;</span>
+                                            </div>
+                                            <div class="button" id="max-button">
+                                              <span>&#xE922;</span>
+                                            </div>
+                                            <div class="button" id="restore-button">
+                                              <span>&#xE923;</span>
+                                            </div>
+                                            <div class="button" id="close-button">
+                                              <span>&#xE8BB;</span>
+                                            </div>
+                                    </div>
+                            </div>
+                    </header>
+              <script>
+                require('./../renderer.js')
+              </script>
+              </div>
         <div id="container">
 	    
    	   <div class="task-list">
@@ -39,7 +65,7 @@
             </div>
 
             <div style="clear:both;"></div>
-	        <script type="text/javascript" src="../script/jquery.min.js"></script>
+	        <script>window.$ = window.jQuery = require('../script/jquery.min.js');</script>
             <script type="text/javascript" src="../script/bootstrap.min.js"></script>
             <script type="text/javascript" src="../script/jquery.ui.min.js"></script>
             <script type="text/javascript" src="../script/to-do.js"></script>

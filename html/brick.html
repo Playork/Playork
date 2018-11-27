@@ -6,9 +6,34 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../css/brick.css" />
 </head>
 <body>
-    <canvas id="myCanvas" width="720" height="480"></canvas>
+        <div>
+                <header id="titlebar">
+                        <div id="drag-region">
+                                <div id="window-title">
+                                        <span>Playork</span>
+                                </div>
+                                <div id="window-controls">
+                                        <div class="button" id="min-button">
+                                          <span>&#xE921;</span>
+                                        </div>
+                                        <div class="button" id="max-button">
+                                          <span>&#xE922;</span>
+                                        </div>
+                                        <div class="button" id="restore-button">
+                                          <span>&#xE923;</span>
+                                        </div>
+                                        <div class="button" id="close-button">
+                                          <span>&#xE8BB;</span>
+                                        </div>
+                                </div>
+                        </div>
+                </header>
+          <script>
+            require('./../renderer.js')
+          </script>
+          </div>
+    <canvas id="myCanvas" width="795" height="510"></canvas>
     <input class="button" type="button" value="Start" id="start" />
     <script src="../script/brick.js"></script>
-    <p style="color:white;margin-left:30%;">use Mouse or Hand for control</p>
 </body>
 </html>
