@@ -198,8 +198,9 @@ display: inline;
 }
 
 iframe {
-  height: 100%;
+  height: calc(100% - 32px);
   position: fixed;
   width:50%;
-  margin-top:70px;
+  margin-top:68px;
+  border-radius: 30px;
 }

@@ -21,7 +21,7 @@
 
 .task-list input[type="text"], .task-list textarea{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    width: 1fr;
+    width: 95%;
     margin: 1px 5px;
     border-radius: 20px;
     background-color: #777;
