@@ -1,6 +1,7 @@
 const {Menu} = require('electron')
 const electron = require('electron')
 const {app, BrowserWindow} = electron
+const { autoUpdater } = require('electron-updater');
 
 require('electron-context-menu')({
 	prepend: (params, browserWindow) => [{
@@ -16,4 +17,13 @@ app.on('ready', () => {
   win.show(); 
   win.focus();
   });
+  autoUpdater.checkForUpdatesAndNotify() 
+    .then((data) => console.log('data', data)) 
+    .catch((err) => console.log(err));
+});
+autoUpdater.setFeedURL({ 
+  provider: 'github', 
+  owner: 'Playork', 
+  protocol: 'https', 
+  repo: 'Playork'
 });
