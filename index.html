@@ -20,6 +20,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       require('./index.js')
     </script>
     <script>window.$ = window.jQuery = require('script/jquery.min.js');</script>
+    <style>
+      #max-button,#restore-button{
+        color:#999;
+        box-shadow: none;
+      }
+      #max-button:hover,#restore-button:hover{
+        box-shadow:none !important;
+        background: none !important;
+        color:#999 !important;
+      }
+  </style>
 </head>
 <body>
     <div>
@@ -29,10 +40,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                                 <div class="button" id="min-button" style="color:#222 !important;box-shadow:none;">
                                   <span>&#xE921;</span>
                                 </div>
-                                <div class="button" id="max-button" style="color:#222 !important;box-shadow:none;">
+                                <div class="button" id="max-button">
                                   <span>&#xE922;</span>
                                 </div>
-                                <div class="button" id="restore-button" style="color:#222 !important;box-shadow:none;">
+                                <div class="button" id="restore-button">
                                   <span>&#xE923;</span>
                                 </div>
                                 <div class="button" id="close-button" style="color:#222 !important;box-shadow:none;">
@@ -42,7 +53,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                 </div>
         </header>
   <script>
-    require('./renderer.js')
+    require('./renderer1.js')
   </script>
   </div>
         
@@ -92,5 +103,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                 $('.app',this).toggleClass('appdown');
 	        });
      </script>
+
 </body>
 </html>

@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "playork",
   "version": "2.0.0",
   "description": "Collection of some simple Tools and Games",
@@ -24,16 +24,16 @@
     }
   },
   "devDependencies": {
-    "electron": "^3.0.8",
-    "electron-builder": "^20.38.2"
+    "electron": "latest",
+    "electron-builder": "latest"
   },
   "dependencies": {
-    "electron-context-menu": "^0.10.0",
-    "electron-dl": "^1.12.0",
-    "electron-is-dev": "^1.0.1",
-    "electron-updater": "^4.0.5",
+    "electron-context-menu": "latest",
+    "electron-dl": "latest",
+    "electron-is-dev": "latest",
+    "electron-updater": "latest",
     "jquery": "^3.3.1",
-    "object": "^0.1.1"
+    "object": "latest"
   },
   "repository": {
     "type": "git",

@@ -9,13 +9,24 @@
     <link href="../css/Font-Lobster.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/snake.css" />
     <script src="../script/snake.js"></script>
+    <style>
+    #max-button,#restore-button{
+      color:#999;
+      box-shadow: none;
+    }
+    #max-button:hover,#restore-button:hover{
+      box-shadow:none !important;
+      background: none !important;
+      color:#999 !important;
+    }
+    </style>
 </head>
 <body>
         <div>
                 <header id="titlebar">
                         <div id="drag-region">
                                 <div id="window-title">
-                                        <span>Playork</span>
+                                        <span>Snake</span>
                                 </div>
                                 <div id="window-controls">
                                         <div class="button" id="min-button">
@@ -34,7 +45,7 @@
                         </div>
                 </header>
           <script>
-            require('./../renderer.js')
+            require('./../renderer1.js')
           </script>
           </div>
             <canvas id="stage" height="510" width="795"></canvas>

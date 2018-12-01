@@ -7,13 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="../css/gobang.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+  <style>
+      #max-button,#restore-button{
+        color:#999;
+        box-shadow: none;
+      }
+      #max-button:hover,#restore-button:hover{
+        box-shadow:none !important;
+        background: none !important;
+        color:#999 !important;
+      }
+  </style>
 </head>
 <body>
     <div>
         <header id="titlebar">
                 <div id="drag-region">
                         <div id="window-title">
-                                <span>Playork</span>
+                                <span>Gobang</span>
                         </div>
                         <div id="window-controls">
                                 <div class="button" id="min-button">
@@ -32,7 +43,7 @@
                 </div>
         </header>
   <script>
-    require('./../renderer.js')
+    require('./../renderer1.js')
   </script>
   </div>
   <div class="outer-container">

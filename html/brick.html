@@ -4,13 +4,24 @@
     <title>Brick Game</title>
     <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../css/brick.css" />
+    <style>
+        #max-button,#restore-button{
+          color:#999;
+          box-shadow: none;
+        }
+        #max-button:hover,#restore-button:hover{
+          box-shadow:none !important;
+          background: none !important;
+          color:#999 !important;
+        }
+    </style>
 </head>
 <body>
         <div>
                 <header id="titlebar">
                         <div id="drag-region">
                                 <div id="window-title">
-                                        <span>Playork</span>
+                                        <span>Brick Game</span>
                                 </div>
                                 <div id="window-controls">
                                         <div class="button" id="min-button">
@@ -29,7 +40,7 @@
                         </div>
                 </header>
           <script>
-            require('./../renderer.js')
+            require('./../renderer1.js')
           </script>
           </div>
     <canvas id="myCanvas" width="795" height="510"></canvas>

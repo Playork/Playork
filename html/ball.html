@@ -8,13 +8,24 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../css/ball.css" />
     <script src="../script/ball.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <style>
+        #max-button,#restore-button{
+          color:#999;
+          box-shadow: none;
+        }
+        #max-button:hover,#restore-button:hover{
+          box-shadow:none !important;
+          background: none !important;
+          color:#999 !important;
+        }
+    </style>
 </head>
 <body>
         <div>
                 <header id="titlebar">
                         <div id="drag-region">
                                 <div id="window-title">
-                                        <span>Playork</span>
+                                        <span>Ball Game</span>
                                 </div>
                                 <div id="window-controls">
                                         <div class="button" id="min-button">
@@ -33,7 +44,7 @@
                         </div>
                 </header>
           <script>
-            require('./../renderer.js')
+            require('./../renderer1.js')
           </script>
           </div>
     <canvas id="gameCanvas" width="795" height="510"></canvas>
