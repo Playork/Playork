@@ -7,6 +7,7 @@
     src: url(font/SegMDL2.ttf);
 }
 body{
+    user-select: none;
     padding:0;
     margin:0;
     padding-top:40px;

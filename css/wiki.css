@@ -2,7 +2,10 @@
   font-family: 'Lobster';
   src: url(../font/Lobster.woff2) format('woff2');
 }
-
+@font-face {
+    font-family: segoe;
+    src: url(../font/SegMDL2.ttf);
+}
 html, body {
   font-size: 10px;
   margin:0;
@@ -71,6 +74,7 @@ html, body {
 }
 
 .top-container {
+  user-select: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -109,7 +113,7 @@ display: inline;
 .resultsContainer {
   width: 100%;
   max-width: 630px;
-  padding-top: 100px;
+  padding-top: 132px;
 }
 
 .resultItem {
@@ -123,6 +127,7 @@ display: inline;
   text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   border-radius:60px;
   padding-left:25px;
+  word-wrap: break-word;
 }
 
 .resultItem-title {
@@ -168,7 +173,9 @@ display: inline;
 }
 
 .moreResults-button {
-  width: 100%;
+  outline: none;
+  user-select: none;
+  width: 90%;
   border: 1px solid #3fe415;
   background-color: #3fe415;
   color: white;
@@ -198,9 +205,101 @@ display: inline;
 }
 
 iframe {
-  height: calc(100% - 32px);
+  height: calc(100% - 106px);
   position: fixed;
   width:50%;
-  margin-top:68px;
-  border-radius: 30px;
+  margin-top:106px;
+  border-radius: 50px;
+}
+#titlebar {
+    display: block;
+    position: fixed;
+    height: 32px;
+    width: 100%;
+    background: #222;
+    padding: 4px !important;
+    color: #FFF;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 6;
+}
+#titlebar #drag-region {
+    width: 100% !important;
+    height: 100%;
+    -webkit-app-region: drag;
+    display: grid;
+    grid-template-columns: auto 138px;
+}
+  #window-controls {
+    display: grid;
+    grid-template-columns: repeat(3, 46px) !important;
+    position: absolute;
+    top: 0 !important;
+    right: 0 !important;
+    height: 100%;
+    font-size: 5px;
+    -webkit-app-region: no-drag;
+  }
+  #window-controls .button {
+    grid-row: 1 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45% !important;
+    height: 45% !important;
+    font-family: segoe;
+    background: none;
+    user-select: none;
+    cursor: default;
+    opacity: 0.8;
+  }
+  #window-controls #min-button {
+    grid-column: 1;
+  }
+  #window-controls #max-button, #window-controls #restore-button {
+    grid-column: 2;
+  }
+  #window-controls #close-button {
+    grid-column: 3;
+  }
+  #window-controls .button:hover {
+    background: rgba(255,255,255,0.2);
+    opacity: 1;
+  }
+  #window-controls #close-button:hover {
+    background: #E81123;
+  }
+  #window-controls #restore-button {
+    display: none;
+  }
+  #window-title {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 15px;
+    margin-left: 8px;
+    overflow-x: hidden;
+  }
+  #window-title span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5;
+  }
+  .button {
+    color: white;
+    background: #3fe415;
+    font-size: 20px;
+    padding:8px 8px;
+    border-width: 0;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    font-family: Lobster;
+    outline: none;
+    cursor: pointer;
+}
+.button:hover {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
