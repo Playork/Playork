@@ -20,7 +20,7 @@ html, body {
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  margin-top:35px;
+  margin-top:40px;
 }
 
 .wikipedia-logo {
@@ -107,13 +107,14 @@ display: inline;
 
 #grid {
   display:grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 48% 50%;
+  column-gap: 1%;
 }
 
 .resultsContainer {
   width: 100%;
   max-width: 630px;
-  padding-top: 132px;
+  padding-top: 137px;
 }
 
 .resultItem {
@@ -205,10 +206,10 @@ display: inline;
 }
 
 iframe {
-  height: calc(100% - 106px);
+  height: calc(100% - 111px);
   position: fixed;
   width:50%;
-  margin-top:106px;
+  margin-top:111px;
   border-radius: 50px;
 }
 #titlebar {

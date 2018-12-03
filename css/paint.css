@@ -83,8 +83,9 @@
 }
 .colors {
     display: grid;
-    grid-template-columns: 4.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2.8fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 35px;
+    column-gap: 2px;
 }
 .size {
     display: grid;
