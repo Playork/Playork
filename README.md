@@ -1,8 +1,6 @@
 ## Description
 
-![logo.png](images/playork.png)
-
-![logo.png](Playork.png)
+![logo.png](app.png)
 
 ![Screenshot](screen.png)
 
